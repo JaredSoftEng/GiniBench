@@ -15,7 +15,7 @@ func main() {
 	//doRun(s)
 	r, err := s.Run("Run3", "go run testUnSat.go", 10000, 10000 )
 	if r != nil {
-		fmt.Print(r.)
+		fmt.Print(r)
 	} else {
 		if err != nil {
 			fmt.Println(err.Error())
