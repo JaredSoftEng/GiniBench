@@ -5,6 +5,7 @@ import (
 	"github.com/irifrance/gini"
 	"github.com/irifrance/gini/bench"
 	"github.com/irifrance/gini/z"
+	"io"
 	"os"
 	"path"
 	"strconv"
@@ -12,28 +13,37 @@ import (
 
 func main() {
 	s := initializeBench()
-	//doRun(s)
-	r, err := s.Run("Run3", "go run testUnSat.go", 10000, 10000 )
-	if r != nil {
-		fmt.Print(r)
-	} else {
-		if err != nil {
-			fmt.Println(err.Error())
+	gp := os.Getenv("GOPATH")
+	runDir := path.Join(gp, "src/GiniBench/Example_suite/runs")
+	run1 := path.Join(runDir, "example1")
+	if !bench.IsRunDir(run1) {
+		r, _ := bench.NewRun(s, "example1", path.Join(gp, "bin/gini.exe") + " " + path.Join(runDir, s.Insts[0]) + " " + path.Join(runDir, s.Insts[1]) + " " + path.Join(runDir, s.Insts[2]),1000, 1000)
+		var index int
+		for range s.Insts {
+			r.Do(index)
+			index += 1
 		}
+	} else {
+		r, _ := bench.OpenRun(s, run1)
+		fmt.Print(r.InstTimeout)
 	}
-	//testSat()
-
 }
 
 func initializeBench() *bench.Suite {
 	gp := os.Getenv("GOPATH")
-	rootDir := path.Join(gp, "src/GiniBench/suite")
-	//rootRunDir := path.Join(rootDir, "runs/Run1")
-	//var RunArray []string
-	//suite, err := bench.CreateSuite(rootDir, RunArray)
-	checkSuite(rootDir)
-	//checkRun(rootRunDir)
-	suite, err := bench.OpenSuite(rootDir)
+	rootDir := path.Join(gp, "src/GiniBench/Example_suite")
+	var suite *bench.Suite
+	var err error
+	if !bench.IsSuiteDir(rootDir) {
+		var cnfFile [3]string
+		cnfFile[0] = path.Join(gp, "src/GiniBench/Benchmark Problems/Example CNF/example1.cnf")
+		cnfFile[1] = path.Join(gp, "src/GiniBench/Benchmark Problems/Example CNF/example2.cnf")
+		cnfFile[2] = path.Join(gp, "src/GiniBench/Benchmark Problems/Example CNF/example3.cnf")
+		var RunArray = []string{cnfFile[0], cnfFile[1], cnfFile[2]}
+		suite, err = bench.CreateSuite(rootDir, RunArray)
+	} else {
+		suite, err = bench.OpenSuite(rootDir)
+	}
 	if err != nil {fmt.Print(err.Error())}
 	return suite
 }
@@ -48,22 +58,6 @@ func doRun(suite *bench.Suite) {
 	}
 }
 
-func checkSuite(path string) {
-	check := bench.IsSuiteDir(path)
-	if ! check {
-		fmt.Printf("The root directory %s is not a valid suite (needs maps, hash and runs subdirectories.", path)
-		os.Exit(1)
-	}
-}
-
-func checkRun(path string) {
-	check := bench.IsRunDir(path)
-	if ! check {
-		fmt.Printf("The 'runs' directory %s is invalid.", path)
-		os.Exit(1)
-	}
-}
-
 func testSat() {
 	g := gini.New()
 	g.Add(z.Lit(1))
@@ -73,5 +67,18 @@ func testSat() {
 	if g.Solve() == 1 {
 		fmt.Printf("The solution is SAT: ")
 		fmt.Printf("Lit 1: %s, Lit 2: %s\n", strconv.FormatBool(g.Value(1)), strconv.FormatBool(g.Value(2)))
+	}
+}
+
+func testImportCNF() {
+	gp := os.Getenv("GOPATH")
+	f, err := os.Open(path.Join(gp, "src/GiniBench/Example_suite/bench-00.cnf"))
+	if err != nil {panic(err)}
+	defer f.Close()
+	var r io.Reader
+	r = f
+	g, _ := gini.NewDimacs(r)
+	if g.Solve() == 1 {
+		fmt.Print(g.MaxVar())
 	}
 }

@@ -6,11 +6,7 @@ import (
 	"github.com/irifrance/gini/z"
 )
 
-func main() {
- testUnSat()
-}
-
-func testUnSat() { 	// Creates a test of three literals, and then three literals to prove that the solve is unsat.
+func TestUnSat() { 	// Creates a test of three literals, and then three literals to prove that the solve is unsat.
 	g := gini.New()
 	g.Add(z.Lit(3))
 	g.Add(0)
