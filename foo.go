@@ -17,15 +17,14 @@ func main() {
 	runDir := path.Join(gp, "src/GiniBench/Example_suite/runs")
 	run1 := path.Join(runDir, "example1")
 	if !bench.IsRunDir(run1) {
-		r, _ := bench.NewRun(s, "example1", path.Join(gp, "bin/gini.exe") + " " + path.Join(runDir, s.Insts[0]) + " " + path.Join(runDir, s.Insts[1]) + " " + path.Join(runDir, s.Insts[2]),1000, 1000)
-		var index int
-		for range s.Insts {
-			r.Do(index)
-			index += 1
-		}
+		r, _ := bench.NewRun(s, "example1", path.Join(gp, "bin/gini.exe") + " -model",1000, 1000)
+		_, _ = r.Do(0)
+		_, _ = r.Do(1)
+		_, _ = r.Do(2)
+
 	} else {
 		r, _ := bench.OpenRun(s, run1)
-		fmt.Print(r.InstTimeout)
+		fmt.Print(r.Cmd)
 	}
 }
 

@@ -1,1 +1,1 @@
-C:\Users\Jared\go/bin/gini.exe C:\Users\Jared\go/src/GiniBench/Example_suite/runs/bench-00.cnf C:\Users\Jared\go/src/GiniBench/Example_suite/runs/bench-01.cnf C:\Users\Jared\go/src/GiniBench/Example_suite/runs/bench-02.cnf
+C:\Users\Jared\go/bin/gini.exe -model
