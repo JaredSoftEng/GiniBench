@@ -1,4 +1,4 @@
-module testing1
+module GiniBench
 
 go 1.14
 

@@ -1,12 +1,12 @@
 package main
 
 import (
+	"GiniBench/Preprocessor/Preprocessor"
 	"flag"
 	"fmt"
 	"os"
 	"strings"
 
-	"Preprocessor"
 )
 
 func main() {
