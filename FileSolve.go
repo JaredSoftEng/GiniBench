@@ -3,9 +3,12 @@ package GiniBench
 import (
 	"fmt"
 	"github.com/irifrance/gini"
+	"github.com/irifrance/gini/internal/xo"
+
 	"io"
 	"os"
 	"path"
+	"time"
 )
 
 func benchmarkFile(path string) {
@@ -16,10 +19,14 @@ func benchmarkFile(path string) {
 	defer f.Close()
 	var r io.Reader
 	r = f
-	g, _ := gini.NewDimacs(r)
-	if g.Solve() == 1 {
-
-	}
+	startTime := time.Now()
+	g, _ := xo.NewSDimacs(r)
+	fileReadTime := time.Since(startTime)
+	stats := xo.NewStats()
+	doSolve := g.GoSolve()
+	result := doSolve.Try(time.Second*30)
+	g.ReadStats(stats)
+	exportResults(g)
 }
 
 func exportResults(g gini.Gini, newFile string) {
