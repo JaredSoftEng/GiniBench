@@ -1,4 +1,4 @@
-package GiniBench
+package main
 
 import (
 	"fmt"
