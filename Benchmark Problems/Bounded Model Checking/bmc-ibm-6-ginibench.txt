@@ -1,0 +1,5 @@
+DIMACS parsing time = 145.9734ms
+Solve Time = 47.0227ms
+CPU Usage % = -1.095571
+Memory Usage Total = 
+Solve result = SAT

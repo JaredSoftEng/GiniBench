@@ -2,22 +2,24 @@ package main
 
 import (
 	"GiniBench/Tools"
-	"github.com/irifrance/gini"
-	"log"
-	"strconv"
-
-	"io"
+	"compress/bzip2"
+	"compress/gzip"
 	"fmt"
+	"github.com/irifrance/gini"
+	"io"
+	"log"
 	"os"
 	"path"
+	"strconv"
 	"time"
 )
 
 var logFile string
 
 func main() {
-	gp := os.Getenv("GOPATH")
-	file1 := path.Join(gp, "/src/Ginibench/Benchmark Problems/Bounded Model Checking/bmc-ibm-1.cnf")
+	//gp := os.Getenv("GOPATH")
+	//file1 := path.Join(gp, "/src/Ginibench/Benchmark Problems/Bounded Model Checking/bmc-ibm-10.cnf")
+	file1 := "C:/Users/Jared/Downloads/Main/final/Zhou/queen8-8-9.cnf.bz2"
 	g := readFile(file1)
 	r := solveFile(g)
 	var result string
@@ -32,37 +34,57 @@ func main() {
 		result = "ERR IN SOLVE"
 	}
 	logToFile("Solve result = " + result)
+	logToFile(" ") // Space before next run if multiple are done
 }
 
-func readFile(path string) *gini.Gini {
-	startTime := time.Now()
-	f, err := os.Open(path)
+func readFile(filepath string) *gini.Gini {
+	f, err := os.Open(filepath)
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
 	defer f.Close()
-	var r io.Reader
-	r = f
+	r := readFileReader(f)
+	startTime := time.Now()
 	g, err := gini.NewDimacs(r)
 	if err != nil {panic(err)}
 	fileReadTime := time.Since(startTime)
-	setLogFile(path)
+	setLogFile(filepath)
 	logToFile("DIMACS parsing time = " + fileReadTime.String())
 	return g
 }
 
+func readFileReader(f *os.File) io.Reader {
+	var r io.Reader
+	var e error
+	switch path.Ext(f.Name()) {
+	case ".gz":
+		r, e = gzip.NewReader(f)
+		if e != nil {
+			log.Fatal(err)
+		}
+	case ".bz2":
+		r = bzip2.NewReader(f)
+	case ".cnf":
+		r = f
+	default:
+		log.Fatal("Invalid File format - must be .gz .bz2 or .cnf")
+	}
+	return r
+}
+
+
 func solveFile(g *gini.Gini) int {
-	startSolve := time.Now()
 	startMem := Tools.TotalMemUsageMB()
 	startCPU := Tools.CpuUsagePercent()
 	doSolve := g.GoSolve()
+	startSolve := time.Now()
 	result := doSolve.Try(time.Second*30)
 	endSolve := time.Since(startSolve)
 	logToFile("Solve Time = " + endSolve.String())
 	cpuPercent := Tools.CpuUsagePercent()
 	logToFile("CPU Usage % = " + strconv.FormatFloat(cpuPercent - startCPU, 'f', 6, 64))
 	memConsumed := Tools.TotalMemUsageMB() - startMem
-	logToFile("Memory Usage Total = " + string(memConsumed))
+	logToFile("Memory Usage Total = " + strconv.FormatUint(memConsumed, 10) + "MB")
 	return result
 }
 
