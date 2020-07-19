@@ -6,12 +6,9 @@ import (
 	"time"
 )
 
-func CpuUsagePercent() float64 {
-	percent, _ := cpu.Percent(time.Second,true)
+func CpuUsagePercent(trackTime time.Duration) float64 {
+	percent, _ := cpu.Percent(trackTime,false)
 	return percent[0]
-	//clockSeconds := float64(C.Clock()-startTicks) / float64(C.CLOCKS_PER_SEC)
-	//realSeconds := time.Since(startTime).Seconds()
-	//return clockSeconds / realSeconds * 100
 }
 
 func CurrentMemUsageMB() uint64 {
