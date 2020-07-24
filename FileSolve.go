@@ -25,12 +25,35 @@ func main() {
 		log.Fatal("File Selection Incomplete")
 		return
 	}
-	g := readFile(file1)
-	maxSolveTime := time.Second*30
+	ok := dialog.Message("%s", "Import entire Directory?").Title("Import Scope").YesNo()
+	if ok {
+		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
+		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz")
+		gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
+		files = append(files, bzFiles...)
+		files = append(files, gzFiles...)
+		if err != nil {
+			log.Fatal(err)
+		}
+		setLogDir(file1)
+		for _, f := range files {
+			solveMainRoutine(f)
+		}
+	} else {
+		setLogFile(file1)
+		solveMainRoutine(file1)
+	}
+}
+
+func solveMainRoutine(filepath string) {
+	logToFile(path.Base(filepath))
+	g := readFile(filepath)
+	maxSolveTime := time.Second * 30
 	r := solveFile(g, maxSolveTime)
 	printResult(r)
 	_ = open.Start(logFile)
 }
+
 
 func readFile(filepath string) *gini.Gini {
 	f, err := os.Open(filepath)
@@ -44,7 +67,6 @@ func readFile(filepath string) *gini.Gini {
 	g, err := gini.NewDimacs(r)
 	if err != nil {panic(err)}
 	fileReadTime := time.Since(startTime)
-	setLogFile(filepath)
 	logToFile("DIMACS parsing time = " + fileReadTime.String())
 	return g
 }
@@ -74,7 +96,6 @@ func solveFile(g *gini.Gini, timeout time.Duration) int {
 	doSolve := g.GoSolve()
 	Tools.CpuUsagePercent(100 * time.Microsecond) // Tracks CPU percent for the next 100 microseconds
 	startSolve := time.Now()
-
 	result := doSolve.Try(timeout)
 	endSolve := time.Since(startSolve)
 	logToFile("Solve Time = " + endSolve.String())
@@ -105,6 +126,12 @@ func setLogFile(fileIn string) {
 	logFile = newFile + "-result" + newFilenameExt
 }
 
+func setLogDir(fileIn string) {
+	newFilenameExt := ".txt"
+	logFile = path.Dir(fileIn) + "Directory-CNF-Results" + newFilenameExt
+}
+
+
 func printResult(result int) {
 	var resultStr string
 	switch result {
@@ -121,3 +148,4 @@ func printResult(result int) {
 	logToFile(" ") // Space before next run if multiple are done
 
 }
+

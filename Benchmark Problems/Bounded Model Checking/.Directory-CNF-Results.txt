@@ -1,0 +1,91 @@
+bmc-galileo-8.cnf
+DIMACS parsing time = 131.9955ms
+Solve Time = 399.9974ms
+CPU Usage % = 32.640950
+Memory Usage Total = 2MB
+Solve result = SAT
+ 
+bmc-galileo-9.cnf
+DIMACS parsing time = 121.9993ms
+Solve Time = 288.9965ms
+CPU Usage % = 88.970588
+Memory Usage Total = 2MB
+Solve result = SAT
+ 
+bmc-ibm-1.cnf
+DIMACS parsing time = 26.9983ms
+Solve Time = 49.0004ms
+CPU Usage % = 88.888889
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+bmc-ibm-10.cnf
+DIMACS parsing time = 182.004ms
+Solve Time = 588.9977ms
+CPU Usage % = 74.074074
+Memory Usage Total = 15MB
+Solve result = SAT
+ 
+bmc-ibm-11.cnf
+DIMACS parsing time = 67.0003ms
+Solve Time = 496.9981ms
+CPU Usage % = 47.368421
+Memory Usage Total = 7MB
+Solve result = SAT
+ 
+bmc-ibm-12.cnf
+DIMACS parsing time = 92.9983ms
+Solve Time = 2.4283671s
+CPU Usage % = 41.969697
+Memory Usage Total = 10MB
+Solve result = SAT
+ 
+bmc-ibm-13.cnf
+DIMACS parsing time = 21.0291ms
+Solve Time = 1.1359972s
+CPU Usage % = 44.407895
+Memory Usage Total = 10MB
+Solve result = SAT
+ 
+bmc-ibm-2.cnf
+DIMACS parsing time = 4.9995ms
+Solve Time = 0s
+CPU Usage % = 33.333333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+bmc-ibm-3.cnf
+DIMACS parsing time = 28.9989ms
+Solve Time = 110.002ms
+CPU Usage % = 88.461538
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+bmc-ibm-4.cnf
+DIMACS parsing time = 61.9997ms
+Solve Time = 61.999ms
+CPU Usage % = 90.384615
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+bmc-ibm-5.cnf
+DIMACS parsing time = 17.9976ms
+Solve Time = 4.0007ms
+CPU Usage % = 90.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+bmc-ibm-6.cnf
+DIMACS parsing time = 169.0003ms
+Solve Time = 39.9973ms
+CPU Usage % = 94.117647
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+bmc-ibm-7.cnf
+DIMACS parsing time = 25.9986ms
+Solve Time = 0s
+CPU Usage % = 81.250000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 

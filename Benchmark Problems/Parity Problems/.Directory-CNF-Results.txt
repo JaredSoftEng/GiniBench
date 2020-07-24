@@ -1,0 +1,210 @@
+par16-1-c.cnf
+DIMACS parsing time = 1ms
+Solve Time = 24.0028ms
+CPU Usage % = 20.971564
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par16-1.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 325.9986ms
+CPU Usage % = 78.260870
+Memory Usage Total = 2MB
+Solve result = SAT
+ 
+par16-2-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 104.002ms
+CPU Usage % = 91.666667
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par16-2.cnf
+DIMACS parsing time = 998.3µs
+Solve Time = 102.0007ms
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-3-c.cnf
+DIMACS parsing time = 998.6µs
+Solve Time = 161.998ms
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-3.cnf
+DIMACS parsing time = 3.0008ms
+Solve Time = 123.0016ms
+CPU Usage % = 92.307692
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-4-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 62.500000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-4.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 23.0038ms
+CPU Usage % = 93.750000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-5-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 265.9998ms
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+par16-5.cnf
+DIMACS parsing time = 3.002ms
+Solve Time = 88ms
+CPU Usage % = 87.500000
+Memory Usage Total = 2MB
+Solve result = SAT
+ 
+par32-1-c.cnf
+DIMACS parsing time = 3.0011ms
+Solve Time = 30.0051293s
+CPU Usage % = 37.889813
+Memory Usage Total = 71MB
+Solve result = UNKNOWN
+ 
+par32-1.cnf
+DIMACS parsing time = 4.9983ms
+Solve Time = 30.0038722s
+CPU Usage % = 42.580561
+Memory Usage Total = 61MB
+Solve result = UNKNOWN
+ 
+par32-2-c.cnf
+DIMACS parsing time = 3.0145ms
+Solve Time = 30.0178329s
+CPU Usage % = 45.727273
+Memory Usage Total = 72MB
+Solve result = UNKNOWN
+ 
+par32-2.cnf
+DIMACS parsing time = 4.022ms
+Solve Time = 30.0035442s
+CPU Usage % = 39.929834
+Memory Usage Total = 49MB
+Solve result = UNKNOWN
+ 
+par32-3-c.cnf
+DIMACS parsing time = 3.9964ms
+Solve Time = 30.0096864s
+CPU Usage % = 42.472699
+Memory Usage Total = 70MB
+Solve result = UNKNOWN
+ 
+par32-3.cnf
+DIMACS parsing time = 3.9992ms
+Solve Time = 30.0001504s
+CPU Usage % = 42.372661
+Memory Usage Total = 64MB
+Solve result = UNKNOWN
+ 
+par32-4-c.cnf
+DIMACS parsing time = 3.0039ms
+Solve Time = 30.0236987s
+CPU Usage % = 40.735447
+Memory Usage Total = 73MB
+Solve result = UNKNOWN
+ 
+par32-4.cnf
+DIMACS parsing time = 4.0288ms
+Solve Time = 30.0115064s
+CPU Usage % = 38.890333
+Memory Usage Total = 54MB
+Solve result = UNKNOWN
+ 
+par32-5-c.cnf
+DIMACS parsing time = 3.0006ms
+Solve Time = 30.0079254s
+CPU Usage % = 32.692308
+Memory Usage Total = 77MB
+Solve result = UNKNOWN
+ 
+par32-5.cnf
+DIMACS parsing time = 4.9978ms
+Solve Time = 30.0106945s
+CPU Usage % = 32.267291
+Memory Usage Total = 66MB
+Solve result = UNKNOWN
+ 
+par8-1-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 75.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-1.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 83.333333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-2-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-2.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-3-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-3.cnf
+DIMACS parsing time = 999.3µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-4-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-4.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-5-c.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+par8-5.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
