@@ -119,6 +119,7 @@ func (pb *Problem) Preprocess() {
 			occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
 		}
 	}
+	log.Printf("Occurence list: %s", occurs)
 	modified := true
 	neverModified := true
 	for modified {
@@ -167,7 +168,20 @@ func (pb *Problem) Preprocess() {
 									}
 									pb.Model[lit2.Var()] = -1
 								}
-								pb.Units = append(pb.Units, lit2)
+
+								// Check if unit literal exists so that we don't add duplicates
+								unitexists := false
+								//log.Printf("Number of unit literals: %d",len(pb.Units))
+								for idx3, _ := range pb.Units {
+									if pb.Units[idx3] == lit2{
+										unitexists = true
+									}
+								}
+								if unitexists{
+									// don't add it if it exists
+								} else {
+									pb.Units = append(pb.Units, lit2)
+								}
 							default:
 								pb.Clauses = append(pb.Clauses, newC)
 							}
