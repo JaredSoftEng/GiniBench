@@ -142,6 +142,7 @@ func (pb *Problem) Preprocess() {
 					for _, idx2 := range occurs[lit.Negation()] {
 						c1 := pb.Clauses[idx1]
 						c2 := pb.Clauses[idx2]
+						log.Printf("Can clause selfsubsume: %t", c1.SelfSubsumes(c2))
 						// generate new clause with self-subsuming resolution
 						newC := c1.Generate(c2, v)
 						if !newC.Simplify() {
@@ -189,23 +190,27 @@ func (pb *Problem) Preprocess() {
 					}
 				}
 				nbRemoved := 0
-				for _, idx := range occurs[lit] {
-					pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-					nbRemoved++
-				}
-				for _, idx := range occurs[lit.Negation()] {
-					pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-					nbRemoved++
-				}
-				pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
-				log.Printf("clauses=%s", pb.CNF())
-				// Redo occurs
-				occurs = make([][]int, pb.NbVars*2)
-				for i, c := range pb.Clauses {
-					for j := 0; j < c.Len(); j++ {
-						occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+				if len(occurs[lit.Negation()])>0{
+					for _, idx := range occurs[lit] {
+						pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+						nbRemoved++
 					}
+					for _, idx := range occurs[lit.Negation()] {
+						pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+						nbRemoved++
+					}
+					pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+					// Redo occurs
+					occurs = make([][]int, pb.NbVars*2)
+					for i, c := range pb.Clauses {
+						for j := 0; j < c.Len(); j++ {
+							occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+						}
+					}
+				} else{
+					modified = false
 				}
+				log.Printf("clauses=%s", pb.CNF())
 				continue
 			}
 		}
