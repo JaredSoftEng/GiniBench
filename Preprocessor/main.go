@@ -34,10 +34,25 @@ func main() {
 			fmt.Fprintf(os.Stderr, "could not parse problem: %v\n", err)
 			os.Exit(1)
 		} else {
-			fmt.Printf("\nCNF FORMULA:\n\n",pb.CNF())
+			//fmt.Printf("\nCNF FORMULA:\n\n",pb.CNF())
 			// run pre-processing
 			pb.Preprocess()
-			fmt.Printf("\nSIMPLIFIED FORMULA:\n\n",pb.CNF())
+			//fmt.Printf("Done. %d clauses now", len(pb.Clauses))
+			//fmt.Printf("\nSIMPLIFIED FORMULA,:\n\n",pb.CNF())
+			// write to file
+			file,err := os.Create("Simplified.cnf")
+			if err!= nil{
+				fmt.Println(err)
+				return
+			}
+			l,err := file.WriteString(pb.CNF())
+			if err!=nil{
+				fmt.Println(err)
+				file.Close()
+				return
+			}
+			fmt.Println(l,"CNF file created successfully!")
+			file.Close()
 		}
 	} else{
 		fmt.Fprintf(os.Stderr, "Could not parse problem. Make sure it is in CNF form.")
