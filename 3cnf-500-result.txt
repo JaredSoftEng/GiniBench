@@ -1,0 +1,15 @@
+Solve Time = 18.5673804s
+CPU Usage % = 36.501262
+Memory Usage Total = 72MB
+Solve result = SAT
+ 
+Solve Time = 5m0.1141791s
+CPU Usage % = 38.135152
+Memory Usage Total = 357MB
+Solve result = UNKNOWN
+ 
+Solve Time = 5m0.2069821s
+CPU Usage % = 37.454460
+Memory Usage Total = 359MB
+Solve result = UNKNOWN
+ 

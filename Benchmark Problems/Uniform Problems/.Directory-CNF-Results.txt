@@ -1,1 +1,7000 @@
 uf20-01.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 31.510851
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-010.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 66.666667
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0100.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 75.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-01000.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 91.666667
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0101.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0102.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0103.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0104.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0105.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0106.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0107.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0108.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0109.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-011.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0110.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0111.cnf
+DIMACS parsing time = 2.0017ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0112.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0113.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0114.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0115.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0116.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0117.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0118.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0119.cnf
+DIMACS parsing time = 1.0011ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-012.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0120.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0121.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0122.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0123.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0124.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0125.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0126.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0127.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0128.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0129.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-013.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0130.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0131.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0132.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0133.cnf
+DIMACS parsing time = 2.9991ms
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0134.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0135.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.551724
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0136.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0137.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0138.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0139.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-014.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0140.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0141.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0142.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0143.cnf
+DIMACS parsing time = 0s
+Solve Time = 998.7µs
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0144.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0145.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0146.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0147.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0148.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0149.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-015.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0150.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0151.cnf
+DIMACS parsing time = 1.0012ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0152.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0153.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0154.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0155.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0156.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0157.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0158.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0159.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-016.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0160.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0161.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0162.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0163.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 97.727273
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0164.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0165.cnf
+DIMACS parsing time = 1ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0166.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0167.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0168.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0169.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-017.cnf
+DIMACS parsing time = 998.9µs
+Solve Time = 999.7µs
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0170.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0171.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0172.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0173.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0174.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0175.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0176.cnf
+DIMACS parsing time = 1ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0177.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0178.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0179.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-018.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0180.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0181.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0182.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0183.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0184.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0185.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0186.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0187.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0188.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0189.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-019.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0190.cnf
+DIMACS parsing time = 1.001ms
+Solve Time = 0s
+CPU Usage % = 96.774194
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0191.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0192.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0193.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0194.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0195.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0196.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0197.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0198.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0199.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-02.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-020.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0200.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0201.cnf
+DIMACS parsing time = 4.0007ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0202.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0203.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0204.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0205.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0206.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0207.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0208.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0209.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-021.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0210.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0211.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0212.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0213.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0214.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0215.cnf
+DIMACS parsing time = 998.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0216.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0217.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0218.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0219.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.368421
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-022.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0220.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0221.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0222.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0223.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0224.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0225.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0226.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0227.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0228.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0229.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-023.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0230.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0231.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0232.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0233.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0234.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0235.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0236.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0237.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0238.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0239.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-024.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0240.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0241.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0242.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0243.cnf
+DIMACS parsing time = 0s
+Solve Time = 1ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0244.cnf
+DIMACS parsing time = 999.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0245.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0246.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0247.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0248.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0249.cnf
+DIMACS parsing time = 1.9997ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-025.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0250.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0251.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0252.cnf
+DIMACS parsing time = 1.0015ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0253.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0254.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0255.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0256.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0257.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0258.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0259.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-026.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0260.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0261.cnf
+DIMACS parsing time = 1ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0262.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0263.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0264.cnf
+DIMACS parsing time = 997.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0265.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0266.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0267.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0268.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0269.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-027.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0270.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0271.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0272.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0273.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0274.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0275.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0276.cnf
+DIMACS parsing time = 1.0012ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0277.cnf
+DIMACS parsing time = 999.1µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0278.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0279.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-028.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0280.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0281.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0282.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0283.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0284.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0285.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0286.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0287.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0288.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0289.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-029.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0290.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.560976
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0291.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0292.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0293.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 72.649573
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0294.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = UNSAT
+ 
+uf20-0295.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0296.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0297.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0298.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0299.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-03.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-030.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0300.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0301.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0302.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0303.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0304.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0305.cnf
+DIMACS parsing time = 0s
+Solve Time = 999.1µs
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0306.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0307.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0308.cnf
+DIMACS parsing time = 999.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0309.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-031.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0310.cnf
+DIMACS parsing time = 999.6µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0311.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0312.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0313.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0314.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0315.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0316.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.774194
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0317.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0318.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0319.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-032.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0320.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0321.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0322.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.142857
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0323.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0324.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0325.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0326.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0327.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0328.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0329.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-033.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0330.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0331.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0332.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0333.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0334.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0335.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0336.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0337.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0338.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0339.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-034.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0340.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0341.cnf
+DIMACS parsing time = 1.0013ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0342.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0343.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0344.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0345.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0346.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0347.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0348.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0349.cnf
+DIMACS parsing time = 999.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-035.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.774194
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0350.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0351.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0352.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0353.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0354.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0355.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0356.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0357.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0358.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0359.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-036.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0360.cnf
+DIMACS parsing time = 1.0002ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0361.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0362.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0363.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0364.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0365.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0366.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0367.cnf
+DIMACS parsing time = 999.3µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0368.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0369.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-037.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0370.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0371.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0372.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0373.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0374.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0375.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0376.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0377.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0378.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0379.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-038.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0380.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0381.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0382.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.0017ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0383.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0384.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0385.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0386.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0387.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0388.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0389.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-039.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0390.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0391.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0392.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0393.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0394.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0395.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0396.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0397.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0398.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0399.cnf
+DIMACS parsing time = 1ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-04.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-040.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0400.cnf
+DIMACS parsing time = 1.001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0401.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0402.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0403.cnf
+DIMACS parsing time = 1.0002ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0404.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0405.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0406.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 98.076923
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0407.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0408.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0409.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-041.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0410.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0411.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0412.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0413.cnf
+DIMACS parsing time = 1.001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0414.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0415.cnf
+DIMACS parsing time = 998.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0416.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0417.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0418.cnf
+DIMACS parsing time = 1.0004ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0419.cnf
+DIMACS parsing time = 997.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-042.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0420.cnf
+DIMACS parsing time = 1.0022ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0421.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0422.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0423.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0424.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0425.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0426.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0427.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0428.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0429.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-043.cnf
+DIMACS parsing time = 1.0013ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0430.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0431.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0432.cnf
+DIMACS parsing time = 999.2µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0433.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0434.cnf
+DIMACS parsing time = 1.0013ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0435.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0436.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0437.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0438.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0439.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-044.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0440.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0441.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0442.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0443.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0444.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0445.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0446.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0447.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0448.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0449.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-045.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0450.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0451.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0452.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0453.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0454.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0455.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0456.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0457.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0458.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0459.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-046.cnf
+DIMACS parsing time = 999.5µs
+Solve Time = 0s
+CPU Usage % = 97.500000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0460.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0461.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0462.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0463.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0464.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0465.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0466.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0467.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0468.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+uf20-0469.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-047.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0470.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0471.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0472.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0473.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0474.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0475.cnf
+DIMACS parsing time = 1.0019ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0476.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0477.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0478.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0479.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 95.833333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-048.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.058824
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0480.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0481.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0482.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0483.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0484.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0485.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0486.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.222222
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0487.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0488.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0489.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-049.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0490.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0491.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0492.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0493.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0494.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0495.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0496.cnf
+DIMACS parsing time = 998.1µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0497.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0498.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0499.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-05.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-050.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0500.cnf
+DIMACS parsing time = 998.6µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0501.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.142857
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0502.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0503.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0504.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0505.cnf
+DIMACS parsing time = 999.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0506.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0507.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0508.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0509.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-051.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0510.cnf
+DIMACS parsing time = 1.0017ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0511.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0512.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0513.cnf
+DIMACS parsing time = 1.0021ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0514.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0515.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0516.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0517.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0518.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0519.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-052.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0520.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0521.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0522.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0523.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0524.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0525.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0526.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0527.cnf
+DIMACS parsing time = 999.3µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0528.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0529.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-053.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0530.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0531.cnf
+DIMACS parsing time = 1.0008ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0532.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0533.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0534.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0535.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0536.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0537.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0538.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.428571
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0539.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 98.076923
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-054.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0540.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0541.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0542.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0543.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0544.cnf
+DIMACS parsing time = 1.0008ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0545.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 98.039216
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0546.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0547.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0548.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.428571
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0549.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-055.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0550.cnf
+DIMACS parsing time = 998.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0551.cnf
+DIMACS parsing time = 999.8µs
+Solve Time = 0s
+CPU Usage % = 98.924731
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0552.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0553.cnf
+DIMACS parsing time = 999.3µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0554.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0555.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0556.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0557.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0558.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0559.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-056.cnf
+DIMACS parsing time = 1.0015ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0560.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.296296
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0561.cnf
+DIMACS parsing time = 9.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0562.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0563.cnf
+DIMACS parsing time = 0s
+Solve Time = 3.9992ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0564.cnf
+DIMACS parsing time = 998.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0565.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0566.cnf
+DIMACS parsing time = 2.0012ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0567.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0568.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0569.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-057.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0570.cnf
+DIMACS parsing time = 999.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0571.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0572.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0573.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0574.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0575.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0576.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0577.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0578.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0579.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-058.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 0s
+CPU Usage % = 96.428571
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0580.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0581.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0582.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0583.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0584.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0585.cnf
+DIMACS parsing time = 998.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0586.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0587.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0588.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0589.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-059.cnf
+DIMACS parsing time = 30.0002ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0590.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0591.cnf
+DIMACS parsing time = 9.9966ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0592.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0593.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0594.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0595.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0596.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0597.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0598.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0599.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-06.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-060.cnf
+DIMACS parsing time = 997.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0600.cnf
+DIMACS parsing time = 1.0023ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0601.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0602.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0603.cnf
+DIMACS parsing time = 1.001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0604.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0605.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0606.cnf
+DIMACS parsing time = 1.0011ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0607.cnf
+DIMACS parsing time = 999.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0608.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0609.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-061.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 95.833333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0610.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0611.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0612.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0613.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0614.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0615.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0616.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0617.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0618.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0619.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-062.cnf
+DIMACS parsing time = 1.0013ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0620.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0621.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0622.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0623.cnf
+DIMACS parsing time = 999.3µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0624.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0625.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.0022ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0626.cnf
+DIMACS parsing time = 998.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0627.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0628.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.296296
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0629.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-063.cnf
+DIMACS parsing time = 1.0007ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0630.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0631.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0632.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0633.cnf
+DIMACS parsing time = 3.9986ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0634.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0635.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0636.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0637.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0638.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0639.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.058824
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-064.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0640.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0641.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0642.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0643.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0644.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0645.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0646.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0647.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0648.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0649.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-065.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0650.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0651.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0652.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0653.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0654.cnf
+DIMACS parsing time = 999.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0655.cnf
+DIMACS parsing time = 0s
+Solve Time = 999.7µs
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0656.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0657.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.9999ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0658.cnf
+DIMACS parsing time = 999.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0659.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-066.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0660.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0661.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0662.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+uf20-0663.cnf
+DIMACS parsing time = 2.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0664.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.0013ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0665.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0666.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0667.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0668.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0669.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-067.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0670.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0671.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0672.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0673.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0674.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0675.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0676.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0677.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0678.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0679.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-068.cnf
+DIMACS parsing time = 995.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0680.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0681.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0682.cnf
+DIMACS parsing time = 1.0008ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0683.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0684.cnf
+DIMACS parsing time = 998.5µs
+Solve Time = 0s
+CPU Usage % = 97.142857
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0685.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0686.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0687.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0688.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0689.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-069.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0690.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0691.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0692.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0693.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0694.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0695.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0696.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0697.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0698.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0699.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-07.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-070.cnf
+DIMACS parsing time = 999.1µs
+Solve Time = 0s
+CPU Usage % = 98.333333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0700.cnf
+DIMACS parsing time = 999.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0701.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0702.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0703.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0704.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0705.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0706.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0707.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0708.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0709.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-071.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0710.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0711.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0712.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0713.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 98.412698
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0714.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0715.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0716.cnf
+DIMACS parsing time = 1.0004ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0717.cnf
+DIMACS parsing time = 1.0006ms
+Solve Time = 0s
+CPU Usage % = 96.969697
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0718.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0719.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-072.cnf
+DIMACS parsing time = 1.0025ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0720.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0721.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0722.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0723.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0724.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0725.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0726.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0727.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0728.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0729.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-073.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0730.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0731.cnf
+DIMACS parsing time = 998.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0732.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0733.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0734.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0735.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0736.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0737.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0738.cnf
+DIMACS parsing time = 999.6µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0739.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-074.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0740.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0741.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0742.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0743.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0744.cnf
+DIMACS parsing time = 1.0007ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0745.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0746.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0747.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0748.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 88.333333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0749.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-075.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 93.750000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0750.cnf
+DIMACS parsing time = 1ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0751.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0752.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0753.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0754.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0755.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0756.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0757.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0758.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0759.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-076.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.959184
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0760.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0761.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0762.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0763.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0764.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0765.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0766.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0767.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0768.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.297297
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0769.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-077.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0770.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0771.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0772.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0773.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0774.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0775.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0776.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0777.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0778.cnf
+DIMACS parsing time = 0s
+Solve Time = 999.6µs
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0779.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-078.cnf
+DIMACS parsing time = 5.0008ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0780.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0781.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0782.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0783.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0784.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0785.cnf
+DIMACS parsing time = 999.1µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0786.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0787.cnf
+DIMACS parsing time = 998.9µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0788.cnf
+DIMACS parsing time = 1.0004ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0789.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-079.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0790.cnf
+DIMACS parsing time = 1.001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0791.cnf
+DIMACS parsing time = 1.0009ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0792.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0793.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0794.cnf
+DIMACS parsing time = 1.0021ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0795.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0796.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0797.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0798.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0799.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-08.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-080.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0800.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0801.cnf
+DIMACS parsing time = 1.0019ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0802.cnf
+DIMACS parsing time = 999.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0803.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0804.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0805.cnf
+DIMACS parsing time = 999µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0806.cnf
+DIMACS parsing time = 6.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0807.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0808.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0809.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-081.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 97.826087
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0810.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0811.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0812.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0813.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0814.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0815.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0816.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.0015ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0817.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0818.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0819.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-082.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0820.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.875000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0821.cnf
+DIMACS parsing time = 999.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0822.cnf
+DIMACS parsing time = 1.0015ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0823.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0824.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0825.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0826.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0827.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0828.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0829.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-083.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0830.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0831.cnf
+DIMACS parsing time = 999.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0832.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0833.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0834.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0835.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0836.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0837.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0838.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0839.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-084.cnf
+DIMACS parsing time = 1.0014ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0840.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0841.cnf
+DIMACS parsing time = 998.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0842.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0843.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0844.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0845.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.969697
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0846.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0847.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 96.774194
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0848.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0849.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-085.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0850.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0851.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0852.cnf
+DIMACS parsing time = 1.0016ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0853.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0854.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0855.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0856.cnf
+DIMACS parsing time = 999µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0857.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0858.cnf
+DIMACS parsing time = 999µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0859.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 96.666667
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-086.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0860.cnf
+DIMACS parsing time = 999.5µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0861.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0862.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0863.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0864.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0865.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0866.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0867.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0868.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0869.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-087.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0870.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0871.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0872.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0873.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0874.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0875.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0876.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0877.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0878.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0879.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-088.cnf
+DIMACS parsing time = 1.9996ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0880.cnf
+DIMACS parsing time = 1.0011ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0881.cnf
+DIMACS parsing time = 1.0007ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0882.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0883.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0884.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0885.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0886.cnf
+DIMACS parsing time = 999.2µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0887.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0888.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0889.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-089.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0890.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 95.833333
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0891.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0892.cnf
+DIMACS parsing time = 1.0002ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0893.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0894.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0895.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0896.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0897.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0898.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0899.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-09.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-090.cnf
+DIMACS parsing time = 1.0012ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0900.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0901.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0902.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0903.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0904.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0905.cnf
+DIMACS parsing time = 4.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0906.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0907.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0908.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0909.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-091.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0910.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0911.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0912.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0913.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0914.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0915.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0916.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0917.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0918.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0919.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-092.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0920.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0921.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0922.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0923.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0924.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0925.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0926.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0927.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0928.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0929.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-093.cnf
+DIMACS parsing time = 1.0003ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0930.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0931.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0932.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0933.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0934.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0935.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0936.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0937.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0938.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0939.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-094.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0940.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0941.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0942.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0943.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0944.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0945.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0946.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0947.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0948.cnf
+DIMACS parsing time = 1.0005ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0949.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-095.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0950.cnf
+DIMACS parsing time = 999.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0951.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0952.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0953.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0954.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0955.cnf
+DIMACS parsing time = 999.4µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0956.cnf
+DIMACS parsing time = 998.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0957.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0958.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0959.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-096.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0960.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0961.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0962.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0963.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0964.cnf
+DIMACS parsing time = 0s
+Solve Time = 1.001ms
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0965.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0966.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0967.cnf
+DIMACS parsing time = 2.9999ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0968.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0969.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-097.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0970.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0971.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0972.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0973.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0974.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0975.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0976.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0977.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0978.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0979.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-098.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0980.cnf
+DIMACS parsing time = 1.0023ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0981.cnf
+DIMACS parsing time = 998.7µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0982.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0983.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0984.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 1MB
+Solve result = SAT
+ 
+uf20-0985.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0986.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0987.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0988.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0989.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-099.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0990.cnf
+DIMACS parsing time = 997.8µs
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0991.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0992.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0993.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0994.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0995.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0996.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0997.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0998.cnf
+DIMACS parsing time = 1.0001ms
+Solve Time = 0s
+CPU Usage % = 100.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+uf20-0999.cnf
+DIMACS parsing time = 0s
+Solve Time = 0s
+CPU Usage % = 86.250000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 

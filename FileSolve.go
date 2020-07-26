@@ -6,6 +6,8 @@ import (
 	"compress/gzip"
 	"fmt"
 	"github.com/irifrance/gini"
+	"github.com/irifrance/gini/gen"
+	"github.com/irifrance/gini/inter"
 	"github.com/skratchdot/open-golang/open"
 	"github.com/sqweek/dialog"
 	"io"
@@ -19,6 +21,9 @@ import (
 var logFile string
 
 func main() {
+	setLogFile(path.Join(os.Getenv("GOPATH"),"src/GiniBench/3cnf-500.cnf"))
+	printResult(testRand3Cnf(550))
+	return
 	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
 	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz").Load()
 	if err != nil {
@@ -147,5 +152,27 @@ func printResult(result int) {
 	logToFile("Solve result = " + resultStr)
 	logToFile(" ") // Space before next run if multiple are done
 
+}
+
+func testRand3Cnf(vars int) int {
+	g := rand3Cnf(vars)
+	startMem := Tools.TotalMemUsageMB()
+	doSolve := g.GoSolve()
+	Tools.CpuUsagePercent(100 * time.Microsecond) // Tracks CPU percent for the next 100 microseconds
+	startSolve := time.Now()
+	result := doSolve.Try(300*time.Second)
+	endSolve := time.Since(startSolve)
+	logToFile("Solve Time = " + endSolve.String())
+	cpuPercentChange := Tools.CpuUsagePercent(0) // returns difference from last cpu check
+	logToFile("CPU Usage % = " + strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
+	memConsumed := Tools.TotalMemUsageMB() - startMem
+	logToFile("Memory Usage Total = " + strconv.FormatUint(memConsumed, 10) + "MB")
+	return result
+}
+
+func rand3Cnf(vars int) inter.S {
+	s := gini.NewS()
+	gen.HardRand3Cnf(s, vars)
+	return s
 }
 
