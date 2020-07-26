@@ -1,6 +1,7 @@
 package main
 
 import (
+	"GiniBench/Preprocessor/Preprocessor"
 	"GiniBench/Tools"
 	"compress/bzip2"
 	"compress/gzip"
@@ -15,15 +16,13 @@ import (
 	"os"
 	"path"
 	"strconv"
+	"strings"
 	"time"
 )
 
 var logFile string
 
 func main() {
-	setLogFile(path.Join(os.Getenv("GOPATH"),"src/GiniBench/3cnf-500.cnf"))
-	printResult(testRand3Cnf(550))
-	return
 	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
 	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz").Load()
 	if err != nil {
@@ -31,6 +30,7 @@ func main() {
 		return
 	}
 	ok := dialog.Message("%s", "Import entire Directory?").Title("Import Scope").YesNo()
+	applyPre := dialog.Message("%s", "Apply Preprocessing?").Title("Preprocessing").YesNo()
 	if ok {
 		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
 		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz")
@@ -42,10 +42,28 @@ func main() {
 		}
 		setLogDir(file1)
 		for _, f := range files {
+			if applyPre {
+				err := err
+				f, err = filePreprocess(f)
+				if err != nil {
+					log.Fatal(err.Error())
+					continue
+				}
+			}
 			solveMainRoutine(f)
 		}
 	} else {
 		setLogFile(file1)
+		if applyPre {
+			startTime := time.Now()
+			err := err
+			file1, err = filePreprocess(file1)
+			if err != nil {log.Fatal(err.Error())
+				return
+			}
+			fileProcessTime := time.Since(startTime)
+			logToFile("File Preprocessed Time (incl read) = " + fileProcessTime.String())
+		}
 		solveMainRoutine(file1)
 	}
 }
@@ -176,3 +194,34 @@ func rand3Cnf(vars int) inter.S {
 	return s
 }
 
+func filePreprocess(filepath string) (newfilepath string, err error) {
+	f, err := os.Open(filepath)
+	if err != nil {
+		return "", fmt.Errorf("could not open %q: %v", filepath, err)
+	}
+	defer f.Close()
+	if ! strings.HasSuffix(filepath, ".cnf") {
+		return "", fmt.Errorf("invalid file format for %q", filepath)
+	}
+	pb, err := Preprocessor.ParseCNF(f)
+	if err != nil {
+		return "", fmt.Errorf("could not parse DIMACS file %q: %v", filepath, err)
+	}
+	pb.Preprocess()
+	// write to file
+	filepathNoExt := strings.TrimSuffix(filepath, path.Ext(filepath))
+	file,err := os.Create(filepathNoExt + "-pp.cnf")
+	if err!= nil{
+		fmt.Println(err)
+		return
+	}
+	l,err := file.WriteString(pb.CNF())
+	if err!=nil{
+		fmt.Println(err)
+		file.Close()
+		return
+	}
+	fmt.Println(l,"CNF file created successfully!")
+	file.Close()
+	return file.Name(), nil
+}
