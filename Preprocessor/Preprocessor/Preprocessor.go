@@ -113,7 +113,7 @@ func (pb *Problem) Simplify2() {
 
 func (pb *Problem) Preprocess() {
 	pb.SelfSub()
-	//pb.Subsumption()
+	pb.Subsumption()
 }
 
 // RUN self-subsuming resolution
@@ -426,15 +426,15 @@ func (pb *Problem) Subsumption() {
 						continue
 					}
 					if c1.Len() > c2.Len(){
-						canP := c1.Subsumes(c2)
-						log.Printf("Can clause 1 subsume clause 2? %t",canP)
+						canP := c2.Subsumes(c1)
+						log.Printf("Can clause 2 subsume clause 1? %t",canP)
 						if canP{
 							nbRemoved := 0
 							// REMOVE THE SUBSUMED CLAUSE
-							pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+							pb.Clauses[idx1] = pb.Clauses[len(pb.Clauses)-1]
+							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
 							nbRemoved++
 
-							pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
 							// Redo occurs
 							occurs = make([][]int, pb.NbVars*2)
 							for i, c := range pb.Clauses {
@@ -444,19 +444,37 @@ func (pb *Problem) Subsumption() {
 							}
 							modified = true
 							neverModified = false
-
+							break
 						}
 
 					}
 					if c2.Len() > c1.Len(){
-						canN := c2.Subsumes(c1)
-						log.Printf("Can clause 2 subsume clause 1? %t",canN)
+						canN := c1.Subsumes(c2)
+						log.Printf("Can clause 1 subsume clause 2? %t",canN)
 						if canN{
+							nbRemoved := 0
+							// REMOVE THE SUBSUMED CLAUSE
+							pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
+							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
+							nbRemoved++
 
+							// Redo occurs
+							occurs = make([][]int, pb.NbVars*2)
+							for i, c := range pb.Clauses {
+								for j := 0; j < c.Len(); j++ {
+									occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+								}
+							}
+							modified = true
+							neverModified = false
+							break
 						}
 					}
 
 					}
+				if modified {
+					break
+				}
 
 				}
 				if modified {
