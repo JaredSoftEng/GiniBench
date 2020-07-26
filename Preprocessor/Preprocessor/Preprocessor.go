@@ -124,6 +124,8 @@ func (pb *Problem) Preprocess() {
 	neverModified := true
 	for modified {
 		modified = false
+
+		// for each variable
 		for i := 0; i < pb.NbVars; i++ {
 			if pb.Model[i] != 0 {
 				continue
@@ -132,80 +134,244 @@ func (pb *Problem) Preprocess() {
 			lit := v.Lit()
 			nbLit := len(occurs[lit])
 			nbLit2 := len(occurs[lit.Negation()])
+
 			// slow method is only effective with less than 10 literals
 			if (nbLit < 10 || nbLit2 < 10) && (nbLit != 0 || nbLit2 != 0) {
-				modified = true
-				neverModified = false
-				// pb.deleted[v] = true
-				log.Printf("%d can be removed: %d and %d", lit.Int(), len(occurs[lit]), len(occurs[lit.Negation()]))
+				log.Printf("Examining literal: %d", lit.Int())
+				// loop through the occurence list and check clauses where literals and their negations exist
 				for _, idx1 := range occurs[lit] {
 					for _, idx2 := range occurs[lit.Negation()] {
+						log.Printf("%d can be removed: %d and %d", lit.Int(), len(occurs[lit]), len(occurs[lit.Negation()]))
+						// positive clause
 						c1 := pb.Clauses[idx1]
+						// negative clause
 						c2 := pb.Clauses[idx2]
-						// generate new clause with self-subsuming resolution
-						newC := c1.Generate(c2, v)
-						if !newC.Simplify() {
-							switch newC.Len() {
-							case 0:
-								log.Printf("Inferred UNSAT")
-								pb.Status = Unsat
-								return
-							case 1:
-								log.Printf("Unit %d", newC.First().Int())
-								lit2 := newC.First()
-								if lit2.IsPositive() {
-									if pb.Model[lit2.Var()] == -1 {
-										pb.Status = Unsat
-										log.Printf("Inferred UNSAT")
-										return
-									}
-									pb.Model[lit2.Var()] = 1
-								} else {
-									if pb.Model[lit2.Var()] == 1 {
-										pb.Status = Unsat
-										log.Printf("Inferred UNSAT")
-										return
-									}
-									pb.Model[lit2.Var()] = -1
-								}
 
-								// Check if unit literal exists so that we don't add duplicates
-								unitexists := false
-								//log.Printf("Number of unit literals: %d",len(pb.Units))
-								for idx3, _ := range pb.Units {
-									if pb.Units[idx3] == lit2{
-										unitexists = true
+						// determine whether self-subsuming resolution is possible for clauses (both ways)
+						canP := c1.SelfSubsumes(c2)
+						canN := c2.SelfSubsumes(c1)
+
+						log.Printf("Can positive clause be self-subsumed? %t",canP)
+						log.Printf("Can negative clause be self-subsumed? %t",canN)
+
+						// if both are true then remove negative clause and literal from positive clause
+						if(canP && canN){
+							// generate new clause with self-subsuming resolution
+							newC := c1.Generate(c2, v)
+							if !newC.Simplify() {
+								switch newC.Len() {
+								case 0:
+									log.Printf("Inferred UNSAT")
+									pb.Status = Unsat
+									return
+								case 1:
+									log.Printf("Unit %d", newC.First().Int())
+									lit2 := newC.First()
+									if lit2.IsPositive() {
+										if pb.Model[lit2.Var()] == -1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = 1
+									} else {
+										if pb.Model[lit2.Var()] == 1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = -1
+									}
+
+									// Check if unit literal exists so that we don't add duplicates
+									unitexists := false
+									//log.Printf("Number of unit literals: %d",len(pb.Units))
+									for idx3, _ := range pb.Units {
+										if pb.Units[idx3] == lit2{
+											unitexists = true
+										}
+									}
+									if unitexists{
+										// don't add it if it exists
+									} else {
+										pb.Units = append(pb.Units, lit2)
+									}
+								default:
+									pb.Clauses = append(pb.Clauses, newC)
+								}
+							}
+
+							// REMOVE THE LITERAL FROM POSITIVE CLAUSE AND DELETE NEGATIVE CLAUSE
+							nbRemoved := 0
+							if len(occurs[lit.Negation()])>0{
+								for _, idx := range occurs[lit] {
+									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+									nbRemoved++
+								}
+								for _, idx := range occurs[lit.Negation()] {
+									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+									nbRemoved++
+								}
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								// Redo occurs
+								occurs = make([][]int, pb.NbVars*2)
+								for i, c := range pb.Clauses {
+									for j := 0; j < c.Len(); j++ {
+										occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
 									}
 								}
-								if unitexists{
-									// don't add it if it exists
-								} else {
-									pb.Units = append(pb.Units, lit2)
+								modified = true
+								neverModified = false
+								break
+							} else{
+								modified = false
+							}
+
+						// if positive clause subsumes negative clause, delete literal from positive clause
+						} else if(canP){
+							// generate new clause with self-subsuming resolution
+							newC := c1.Generate(c2, v)
+							if !newC.Simplify() {
+								switch newC.Len() {
+								case 0:
+									log.Printf("Inferred UNSAT")
+									pb.Status = Unsat
+									return
+								case 1:
+									log.Printf("Unit %d", newC.First().Int())
+									lit2 := newC.First()
+									if lit2.IsPositive() {
+										if pb.Model[lit2.Var()] == -1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = 1
+									} else {
+										if pb.Model[lit2.Var()] == 1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = -1
+									}
+
+									// Check if unit literal exists so that we don't add duplicates
+									unitexists := false
+									//log.Printf("Number of unit literals: %d",len(pb.Units))
+									for idx3, _ := range pb.Units {
+										if pb.Units[idx3] == lit2{
+											unitexists = true
+										}
+									}
+									if unitexists{
+										// don't add it if it exists
+									} else {
+										pb.Units = append(pb.Units, lit2)
+									}
+								default:
+									pb.Clauses = append(pb.Clauses, newC)
 								}
-							default:
-								pb.Clauses = append(pb.Clauses, newC)
+							}
+
+							// REMOVE THE LITERAL FROM POSITIVE CLAUSE
+							nbRemoved := 0
+							if len(occurs[lit.Negation()])>0{
+								for _, idx := range occurs[lit] {
+									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+									nbRemoved++
+								}
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								// Redo occurs
+								occurs = make([][]int, pb.NbVars*2)
+								for i, c := range pb.Clauses {
+									for j := 0; j < c.Len(); j++ {
+										occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+									}
+								}
+								modified = true
+								neverModified = false
+								break
+							} else{
+								modified = false
+							}
+
+							// if negative clause subsumes positive clause, delete literal from negative clause
+						} else if(canN){
+							// generate new clause with self-subsuming resolution
+							newC := c1.Generate(c2, v)
+							if !newC.Simplify() {
+								switch newC.Len() {
+								case 0:
+									log.Printf("Inferred UNSAT")
+									pb.Status = Unsat
+									return
+								case 1:
+									log.Printf("Unit %d", newC.First().Int())
+									lit2 := newC.First()
+									if lit2.IsPositive() {
+										if pb.Model[lit2.Var()] == -1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = 1
+									} else {
+										if pb.Model[lit2.Var()] == 1 {
+											pb.Status = Unsat
+											log.Printf("Inferred UNSAT")
+											return
+										}
+										pb.Model[lit2.Var()] = -1
+									}
+
+									// Check if unit literal exists so that we don't add duplicates
+									unitexists := false
+									//log.Printf("Number of unit literals: %d",len(pb.Units))
+									for idx3, _ := range pb.Units {
+										if pb.Units[idx3] == lit2{
+											unitexists = true
+										}
+									}
+									if unitexists{
+										// don't add it if it exists
+									} else {
+										pb.Units = append(pb.Units, lit2)
+									}
+								default:
+									pb.Clauses = append(pb.Clauses, newC)
+								}
+							}
+
+							// REMOVE THE LITERAL FROM NEGATIVE CLAUSE
+							nbRemoved := 0
+							if len(occurs[lit.Negation()])>0{
+								for _, idx := range occurs[lit.Negation()] {
+									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+									nbRemoved++
+								}
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								// Redo occurs
+								occurs = make([][]int, pb.NbVars*2)
+								for i, c := range pb.Clauses {
+									for j := 0; j < c.Len(); j++ {
+										occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+									}
+								}
+								modified = true
+								neverModified = false
+								break
+							} else{
+								modified = false
 							}
 						}
+
+					}
+					if modified {
+						break
 					}
 				}
-				nbRemoved := 0
-				for _, idx := range occurs[lit] {
-					pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-					nbRemoved++
-				}
-				for _, idx := range occurs[lit.Negation()] {
-					pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-					nbRemoved++
-				}
-				pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
 				log.Printf("clauses=%s", pb.CNF())
-				// Redo occurs
-				occurs = make([][]int, pb.NbVars*2)
-				for i, c := range pb.Clauses {
-					for j := 0; j < c.Len(); j++ {
-						occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
-					}
-				}
 				continue
 			}
 		}

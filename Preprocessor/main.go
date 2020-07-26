@@ -37,8 +37,8 @@ func main() {
 			//fmt.Printf("\nCNF FORMULA:\n\n",pb.CNF())
 			// run pre-processing
 			pb.Preprocess()
-			fmt.Printf("Done. %d clauses now", len(pb.Clauses))
-			fmt.Printf("\nSIMPLIFIED FORMULA,:\n\n",pb.CNF())
+			//fmt.Printf("Done. %d clauses now", len(pb.Clauses))
+			//fmt.Printf("\nSIMPLIFIED FORMULA,:\n\n",pb.CNF())
 			// write to file
 			file,err := os.Create("Simplified.cnf")
 			if err!= nil{
