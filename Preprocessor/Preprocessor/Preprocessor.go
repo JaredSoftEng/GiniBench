@@ -208,17 +208,21 @@ func (pb *Problem) SelfSub() {
 							}
 
 							// REMOVE THE LITERAL FROM POSITIVE CLAUSE AND DELETE NEGATIVE CLAUSE
-							nbRemoved := 0
+							//nbRemoved := 0
 							if len(occurs[lit.Negation()])>0{
-								for _, idx := range occurs[lit] {
-									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-									nbRemoved++
-								}
-								for _, idx := range occurs[lit.Negation()] {
-									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-									nbRemoved++
-								}
-								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								pb.Clauses[idx1] = pb.Clauses[len(pb.Clauses)-1]
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
+								pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
+								//for _, idx := range occurs[lit] {
+								//	pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+								//	nbRemoved++
+								//}
+								//for _, idx := range occurs[lit.Negation()] {
+								//	pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
+								//	nbRemoved++
+								//}
+								//pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
 								// Redo occurs
 								occurs = make([][]int, pb.NbVars*2)
 								for i, c := range pb.Clauses {
