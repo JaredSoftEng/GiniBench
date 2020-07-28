@@ -214,16 +214,7 @@ func (pb *Problem) SelfSub() {
 								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
 								pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
 								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
-								//for _, idx := range occurs[lit] {
-								//	pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-								//	nbRemoved++
-								//}
-								//for _, idx := range occurs[lit.Negation()] {
-								//	pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-								//	nbRemoved++
-								//}
-								//pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
-								// Redo occurs
+
 								occurs = make([][]int, pb.NbVars*2)
 								for i, c := range pb.Clauses {
 									for j := 0; j < c.Len(); j++ {
@@ -237,7 +228,7 @@ func (pb *Problem) SelfSub() {
 								modified = false
 							}
 
-						// if positive clause subsumes negative clause, delete literal from positive clause
+						// if positive clause subsumes negative clause, delete literal from negative clause
 						} else if(canP){
 							// generate new clause with self-subsuming resolution
 							newC := c1.Generate(c2, v)
@@ -285,13 +276,9 @@ func (pb *Problem) SelfSub() {
 							}
 
 							// REMOVE THE LITERAL FROM POSITIVE CLAUSE
-							nbRemoved := 0
 							if len(occurs[lit.Negation()])>0{
-								for _, idx := range occurs[lit.Negation()] {
-									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-									nbRemoved++
-								}
-								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
 								// Redo occurs
 								occurs = make([][]int, pb.NbVars*2)
 								for i, c := range pb.Clauses {
@@ -306,7 +293,7 @@ func (pb *Problem) SelfSub() {
 								modified = false
 							}
 
-							// if negative clause subsumes positive clause, delete literal from negative clause
+							// if negative clause subsumes positive clause, delete literal from positive clause
 						} else if(canN){
 							// generate new clause with self-subsuming resolution
 							newC := c2.Generate(c1, v)
@@ -354,13 +341,9 @@ func (pb *Problem) SelfSub() {
 							}
 
 							// REMOVE THE LITERAL FROM NEGATIVE CLAUSE
-							nbRemoved := 0
 							if len(occurs[lit.Negation()])>0{
-								for _, idx := range occurs[lit] {
-									pb.Clauses[idx] = pb.Clauses[len(pb.Clauses)-nbRemoved-1]
-									nbRemoved++
-								}
-								pb.Clauses = pb.Clauses[:len(pb.Clauses)-nbRemoved]
+								pb.Clauses[idx1] = pb.Clauses[len(pb.Clauses)-1]
+								pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
 								// Redo occurs
 								occurs = make([][]int, pb.NbVars*2)
 								for i, c := range pb.Clauses {
@@ -402,159 +385,111 @@ func (pb *Problem) Subsumption() {
 		}
 	}
 	log.Printf("Occurence list: %s", occurs)
-	modified := true
-	neverModified := true
-	for modified {
-		modified = false
+	toRemove := make([]int, 0)
 
-		// for each positive variable
-		for i := 0; i < pb.NbVars; i++ {
-			if pb.Model[i] != 0 {
-				continue
-			}
-			v := Var(i)
-			lit := v.Lit()
-			//nbLit := len(occurs[lit])
-			//nbLit2 := len(occurs[lit.Negation()])
-			log.Printf("Examining literal: %d", lit.Int())
-			// loop through the occurence list and compare clauses where the literals exist
-			for _, idx1 := range occurs[lit] {
-				for _, idx2 := range occurs[lit] {
-					// clause 1
-					c1 := pb.Clauses[idx1]
-					// clause 2
-					c2 := pb.Clauses[idx2]
-
-					// CHECK IF POSSIBLE
-					if idx1 <= idx2 {
-						continue
-					}
-					if c1.Len() > c2.Len(){
-						canP := c2.Subsumes(c1)
-						log.Printf("Can clause 2 subsume clause 1? %t",canP)
-						if canP{
-							nbRemoved := 0
-							// REMOVE THE SUBSUMED CLAUSE
-							pb.Clauses[idx1] = pb.Clauses[len(pb.Clauses)-1]
-							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
-							nbRemoved++
-
-							// Redo occurs
-							occurs = make([][]int, pb.NbVars*2)
-							for i, c := range pb.Clauses {
-								for j := 0; j < c.Len(); j++ {
-									occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
-								}
-							}
-							modified = true
-							neverModified = false
-							break
-						}
-
-					}
-					if c2.Len() > c1.Len(){
-						canN := c1.Subsumes(c2)
-						log.Printf("Can clause 1 subsume clause 2? %t",canN)
-						if canN{
-							nbRemoved := 0
-							// REMOVE THE SUBSUMED CLAUSE
-							pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
-							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
-							nbRemoved++
-
-							// Redo occurs
-							occurs = make([][]int, pb.NbVars*2)
-							for i, c := range pb.Clauses {
-								for j := 0; j < c.Len(); j++ {
-									occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
-								}
-							}
-							modified = true
-							neverModified = false
-							break
-						}
-					}
-
-					}
-				if modified {
-					break
-				}
-
-				}
-
-			// negative literal loop
-			for _, idx1 := range occurs[lit.Negation()] {
-				for _, idx2 := range occurs[lit.Negation()] {
-					// clause 1
-					c1 := pb.Clauses[idx1]
-					// clause 2
-					c2 := pb.Clauses[idx2]
-
-					// CHECK IF POSSIBLE
-					if idx1 <= idx2 {
-						continue
-					}
-					if c1.Len() > c2.Len(){
-						canP := c2.Subsumes(c1)
-						log.Printf("Can clause 2 subsume clause 1? %t",canP)
-						if canP{
-							nbRemoved := 0
-							// REMOVE THE SUBSUMED CLAUSE
-							pb.Clauses[idx1] = pb.Clauses[len(pb.Clauses)-1]
-							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
-							nbRemoved++
-
-							// Redo occurs
-							occurs = make([][]int, pb.NbVars*2)
-							for i, c := range pb.Clauses {
-								for j := 0; j < c.Len(); j++ {
-									occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
-								}
-							}
-							modified = true
-							neverModified = false
-							break
-						}
-
-					}
-					if c2.Len() > c1.Len(){
-						canN := c1.Subsumes(c2)
-						log.Printf("Can clause 1 subsume clause 2? %t",canN)
-						if canN{
-							nbRemoved := 0
-							// REMOVE THE SUBSUMED CLAUSE
-							pb.Clauses[idx2] = pb.Clauses[len(pb.Clauses)-1]
-							pb.Clauses = pb.Clauses[:len(pb.Clauses)-1]
-							nbRemoved++
-
-							// Redo occurs
-							occurs = make([][]int, pb.NbVars*2)
-							for i, c := range pb.Clauses {
-								for j := 0; j < c.Len(); j++ {
-									occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
-								}
-							}
-							modified = true
-							neverModified = false
-							break
-						}
-					}
-
-				}
-				if modified {
-					break
-				}
-
-			}
-				if modified {
-					break
-				}
-			}
-			log.Printf("clauses=%s", pb.CNF())
+	// for each positive variable
+	for i := 0; i < pb.NbVars; i++ {
+		if pb.Model[i] != 0 {
 			continue
+		}
+		v := Var(i)
+		lit := v.Lit()
+		//nbLit := len(occurs[lit])
+		//nbLit2 := len(occurs[lit.Negation()])
+		log.Printf("Examining literal: %d", lit.Int())
+		// loop through the occurence list and compare clauses where the literals exist
+		for _, idx1 := range occurs[lit] {
+			for _, idx2 := range occurs[lit] {
+				// clause 1
+				c1 := pb.Clauses[idx1]
+				// clause 2
+				c2 := pb.Clauses[idx2]
+
+				// CHECK IF POSSIBLE
+				if idx1 <= idx2 {
+					continue
+				}
+				if c1.Len() > c2.Len(){
+					canP := c2.Subsumes(c1)
+					log.Printf("Can clause 2 subsume clause 1? %t",canP)
+					if canP{
+						// Save index of clause to remove for later
+						toRemove = append(toRemove, idx1)
+					}
+
+				}
+				if c2.Len() > c1.Len(){
+					canN := c1.Subsumes(c2)
+					log.Printf("Can clause 1 subsume clause 2? %t",canN)
+					if canN{
+						// Save index of clause to remove for later
+						toRemove = append(toRemove, idx2)
+					}
+				}
+			}
+		}
+
+		// negative literal loop
+		for _, idx1 := range occurs[lit.Negation()] {
+			for _, idx2 := range occurs[lit.Negation()] {
+				// clause 1
+				c1 := pb.Clauses[idx1]
+				// clause 2
+				c2 := pb.Clauses[idx2]
+
+				// CHECK IF POSSIBLE
+				if idx1 <= idx2 {
+					continue
+				}
+				if c1.Len() > c2.Len(){
+					canP := c2.Subsumes(c1)
+					log.Printf("Can clause 2 subsume clause 1? %t",canP)
+					if canP{
+						// Save index of clause to remove for later
+						toRemove = append(toRemove, idx1)
+					}
+
+				}
+				if c2.Len() > c1.Len(){
+					canN := c1.Subsumes(c2)
+					log.Printf("Can clause 1 subsume clause 2? %t",canN)
+					if canN{
+						// Save index of clause to remove for later
+						toRemove = append(toRemove, idx2)
+					}
+				}
+
+			}
+		}
 	}
-	if !neverModified {
-		pb.Simplify2()
+
+	// Generate new clause list by removing all the subsumed clauses
+	newClauses := make([]*Clause, 0, 0)
+	match := false
+	for i := 0; i < len(pb.Clauses); i++ {
+		match = false
+		for j := 0; j < len(toRemove); j++ {
+
+			// REMOVE THE SUBSUMED CLAUSE
+			if toRemove[j] == i{
+				match = true
+			}
+		}
+		if match == false{
+			newClauses = append(newClauses,pb.Clauses[i])
+		}
 	}
+	pb.Clauses = newClauses
+
+	// Redo occurs
+	occurs = make([][]int, pb.NbVars*2)
+	for i, c := range pb.Clauses {
+		for j := 0; j < c.Len(); j++ {
+			occurs[c.Get(j)] = append(occurs[c.Get(j)], i)
+		}
+	}
+
+	log.Printf("clauses=%s", pb.CNF())
+	pb.Simplify2()
 	log.Printf("Done. %d clauses now", len(pb.Clauses))
 }
