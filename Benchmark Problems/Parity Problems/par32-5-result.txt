@@ -1,2 +1,0 @@
-C:\Users\Jared\go\src\GiniBench\Benchmark Problems\Parity Problems\par32-5.cnf
-DIMACS parsing time = 14.0028ms

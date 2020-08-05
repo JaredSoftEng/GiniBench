@@ -1,7 +1,0 @@
-C:\Users\Jared\go\src\GiniBench\Benchmark Problems\Parity Problems\par16-1.cnf
-DIMACS parsing time = 1.9966ms
-Solve Time = 191.0219ms
-CPU Usage % = 13.719154
-Memory Usage Total = 1MB
-Solve result = SAT
- 

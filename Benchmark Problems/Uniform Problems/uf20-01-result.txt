@@ -1,7 +1,0 @@
-C:\Users\Jared\go\src\GiniBench\Benchmark Problems\Uniform Problems\uf20-01-pp.cnf
-DIMACS parsing time = 0s
-Solve Time = 0s
-CPU Usage % = 31.582126
-Memory Usage Total = 0MB
-Solve result = SAT
- 

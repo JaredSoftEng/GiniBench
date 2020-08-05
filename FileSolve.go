@@ -53,7 +53,6 @@ func main() {
 				f, err = filePreprocess(f)
 				if err != nil {
 					log.Fatal(err.Error())
-					continue
 				}
 			}
 			logToFile(path.Base(f))
@@ -75,9 +74,9 @@ func main() {
 		}
 		logToFile(path.Base(file1))
 		g := readFile(file1)
-		preprocess(g)
-		file,_ := os.Create(file1 + "-pp.cnf")
-		_ = g.Write(file)
+		preprocess(g) // TODO: do some performance wrapping for the new pre-processing code
+		file,_ := os.Create(file1 + "-pp.cnf") // Temporary to compare the CNF output
+		_ = g.Write(file) // TEMPORARY
 		solveMainRoutine(g)
 	}
 }
