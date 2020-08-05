@@ -1,14 +1,18 @@
 package main
 
 import (
+	"C"
 	"GiniBench/Preprocessor/Preprocessor"
+	"GiniBench/Preprocessor/pregini"
 	"GiniBench/Tools"
 	"compress/bzip2"
 	"compress/gzip"
 	"fmt"
-	"github.com/irifrance/gini"
-	"github.com/irifrance/gini/gen"
-	"github.com/irifrance/gini/inter"
+	"github.com/jaredsofteng/gini"
+	"github.com/jaredsofteng/gini/gen"
+	"github.com/jaredsofteng/gini/inter"
+	"github.com/jaredsofteng/gini/logic/aiger"
+	"github.com/pkg/profile"
 	"github.com/skratchdot/open-golang/open"
 	"github.com/sqweek/dialog"
 	"io"
@@ -24,7 +28,7 @@ var logFile string
 
 func main() {
 	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
-	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz").Load()
+	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig").Load()
 	if err != nil {
 		log.Fatal("File Selection Incomplete")
 		return
@@ -32,6 +36,8 @@ func main() {
 	ok := dialog.Message("%s", "Import entire Directory?").Title("Import Scope").YesNo()
 	applyPre := dialog.Message("%s", "Apply Preprocessing?").Title("Preprocessing").YesNo()
 	if ok {
+
+		defer profile.Start().Stop()
 		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
 		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz")
 		gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
@@ -50,11 +56,14 @@ func main() {
 					continue
 				}
 			}
-			solveMainRoutine(f)
+			logToFile(path.Base(f))
+			g := readFile(f)
+			solveMainRoutine(g)
 		}
 	} else {
 		setLogFile(file1)
 		if applyPre {
+			defer profile.Start().Stop()
 			startTime := time.Now()
 			err := err
 			file1, err = filePreprocess(file1)
@@ -64,13 +73,16 @@ func main() {
 			fileProcessTime := time.Since(startTime)
 			logToFile("File Preprocessed Time (incl read) = " + fileProcessTime.String())
 		}
-		solveMainRoutine(file1)
+		logToFile(path.Base(file1))
+		g := readFile(file1)
+		preprocess(g)
+		file,_ := os.Create(file1 + "-pp.cnf")
+		_ = g.Write(file)
+		solveMainRoutine(g)
 	}
 }
 
-func solveMainRoutine(filepath string) {
-	logToFile(path.Base(filepath))
-	g := readFile(filepath)
+func solveMainRoutine(g *gini.Gini) {
 	maxSolveTime := time.Second * 30
 	r := solveFile(g, maxSolveTime)
 	printResult(r)
@@ -92,6 +104,23 @@ func readFile(filepath string) *gini.Gini {
 	fileReadTime := time.Since(startTime)
 	logToFile("DIMACS parsing time = " + fileReadTime.String())
 	return g
+}
+
+func readAiger(filepath string) *aiger.T {
+	f, err := os.Open(filepath)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer f.Close()
+	var r io.Reader
+	r = f
+	startTime := time.Now()
+
+	s, err := aiger.ReadBinary(r)
+	if err != nil {panic(err)}
+	fileReadTime := time.Since(startTime)
+	logToFile("DIMACS parsing time = " + fileReadTime.String())
+	return s
 }
 
 func readFileReader(f *os.File) io.Reader {
@@ -224,4 +253,23 @@ func filePreprocess(filepath string) (newfilepath string, err error) {
 	fmt.Println(l,"CNF file created successfully!")
 	file.Close()
 	return file.Name(), nil
+}
+
+func solveAiger() {
+	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
+	file1, _ := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig").Load()
+	setLogFile(file1)
+	g := gini.New()
+	aig := readAiger(file1)
+	aig.C.ToCnf(g)
+	r := solveFile(g, 30*time.Second)
+	printResult(r)
+	_ = open.Start(logFile)
+	return
+}
+
+func preprocess(g *gini.Gini) {
+	pregini.Subsumption(g)
+	//pregini.SelfSubsumption(g) // Performs selfsub on a gini solver
+	return
 }

@@ -1,0 +1,8 @@
+File Preprocessed Time (incl read) = 209.0002ms
+C:\Users\Jared\go\src\GiniBench\Benchmark Problems\Parity Problems\par8-2-pp.cnf
+DIMACS parsing time = 998µs
+Solve Time = 0s
+CPU Usage % = 12.115891
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
