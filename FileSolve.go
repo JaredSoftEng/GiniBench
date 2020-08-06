@@ -54,17 +54,18 @@ func main() {
 				//}
 			}
 			writeCSVtoLog(path.Base(f))
-			writeCSVtoLog(time.Now().Format("2006-08-05"))
+			writeCSVtoLog(time.Now().Format("2006-03-09"))
 			writeCSVtoLog(time.Now().Format("15:04:05"))
 			g := readFile(f)
-			startTime := time.Now()
 			var rem int
+			rem = 0
+			startTime := time.Now()
 			if applyPre {
 				rem = preprocess(g)
 			}
 			fileProcessTime := time.Since(startTime)
-			writeCSVtoLog(string(rem))
 			writeCSVtoLog(fileProcessTime.String())
+			writeCSVtoLog(string(rem))
 			solveMainRoutine(g)
 			logToFile("")
 		}
@@ -82,14 +83,15 @@ func main() {
 		writeCSVtoLog(time.Now().Format("2006-03-09"))
 		writeCSVtoLog(time.Now().Format("15:04:05"))
 		g := readFile(file1)
-		startTime := time.Now()
 		var rem int
+		rem = 0
+		startTime := time.Now()
 		if applyPre {
 			rem = preprocess(g)
 		}
 		fileProcessTime := time.Since(startTime)
-		writeCSVtoLog(string(rem))
 		writeCSVtoLog(fileProcessTime.String())
+		writeCSVtoLog(string(rem))
 		file,_ := os.Create(file1 + "-pregini.cnf") // Temporary to compare the CNF output
 		_ = g.Write(file) // TEMPORARY
 		solveMainRoutine(g)
