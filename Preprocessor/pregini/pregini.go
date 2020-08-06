@@ -36,7 +36,7 @@ func WatchedBinarySubsumption (g *gini.Gini) []z.C {
 		if len(WatchedLits[iLit]) > 1 { // The literal occurs more than once
 			Watches := WatchedLits[iLit]
 			for j := 0; j < len(Watches); j++ {
-				if Watches[j].IsBinary() { // Compare with each other watched literal set
+				if Watches[j] >= (1 << 63) { // Compare with each other watched literal set
 					Lit1 := Int2Lit(iLit)
 					Lit2 := Watches[j].Other()
 					iLit2 := Lit2Int(Lit2)
@@ -98,9 +98,10 @@ func FetchClauses(g *gini.Gini, lit int) (int, []z.C, [][]z.Lit ) {
 }
 
 // Wrapper for the Subsumption method, will compact the cDat prior to each call.
-func Subsumption(g *gini.Gini) {
-	RemoveClauses(g, WatchedBinarySubsumption(g))
-	RemoveClauses(g, WatchedSubsumption(g))
+func Subsumption(g *gini.Gini) int {
+	cRem := RemoveClauses(g, WatchedBinarySubsumption(g))
+	cRem2 := RemoveClauses(g, WatchedSubsumption(g))
+	return cRem + cRem2
 }
 
 func deprecatedTestFunc (g *gini.Gini) {
@@ -149,9 +150,10 @@ func deprecatedTestFunc (g *gini.Gini) {
 
 // First traverses clause set to unlink the associated watched literals from each clause, and adds the clause to the removal queue.
 // CompactCDat is called which remaps the byte space associated with the clause set.
-func RemoveClauses(g *gini.Gini, c []z.C) {
+func RemoveClauses(g *gini.Gini, c []z.C) int {
 	g.ClauseDB().Remove(c...)
 	g.ClauseDB().GetGC().CompactCDat(g.ClauseDB())
+	return len(c)
 }
 
 // Compares arrays of z.Lit (A -> B), returns true if B contains all the elements in A (for performance, assumes literal ordering )

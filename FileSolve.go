@@ -12,7 +12,6 @@ import (
 	"github.com/jaredsofteng/gini/gen"
 	"github.com/jaredsofteng/gini/inter"
 	"github.com/jaredsofteng/gini/logic/aiger"
-	"github.com/pkg/profile"
 	"github.com/skratchdot/open-golang/open"
 	"github.com/sqweek/dialog"
 	"io"
@@ -28,7 +27,7 @@ var logFile string
 
 func main() {
 	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
-	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig").Load()
+	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig","dimacs").Load()
 	if err != nil {
 		log.Fatal("File Selection Incomplete")
 		return
@@ -36,8 +35,6 @@ func main() {
 	ok := dialog.Message("%s", "Import entire Directory?").Title("Import Scope").YesNo()
 	applyPre := dialog.Message("%s", "Apply Preprocessing?").Title("Preprocessing").YesNo()
 	if ok {
-
-		defer profile.Start().Stop()
 		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
 		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz")
 		gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
@@ -49,35 +46,54 @@ func main() {
 		setLogDir(file1)
 		for _, f := range files {
 			if applyPre {
-				err := err
-				f, err = filePreprocess(f)
-				if err != nil {
-					log.Fatal(err.Error())
-				}
+				//defer profile.Start().Stop()
+				//err := err
+				//f, err = filePreprocess(f)
+				//if err != nil {
+				//	log.Fatal(err.Error())
+				//}
 			}
-			logToFile(path.Base(f))
+			writeCSVtoLog(path.Base(f))
+			writeCSVtoLog(time.Now().Format("2006-08-05"))
+			writeCSVtoLog(time.Now().Format("15:04:05"))
 			g := readFile(f)
+			startTime := time.Now()
+			var rem int
+			if applyPre {
+				rem = preprocess(g)
+			}
+			fileProcessTime := time.Since(startTime)
+			writeCSVtoLog(string(rem))
+			writeCSVtoLog(fileProcessTime.String())
 			solveMainRoutine(g)
+			logToFile("")
 		}
+		_ = open.Start(logFile)
 	} else {
 		setLogFile(file1)
 		if applyPre {
-			defer profile.Start().Stop()
-			startTime := time.Now()
-			err := err
-			file1, err = filePreprocess(file1)
-			if err != nil {log.Fatal(err.Error())
-				return
-			}
-			fileProcessTime := time.Since(startTime)
-			logToFile("File Preprocessed Time (incl read) = " + fileProcessTime.String())
+			//defer profile.Start().Stop()
+			//startTime := time.Now()
+			//err := err
+			//file1, err = filePreprocess(file1)
+			//fileProcessTime := time.Since(startTime)
 		}
-		logToFile(path.Base(file1))
+		writeCSVtoLog(path.Base(file1))
+		writeCSVtoLog(time.Now().Format("2006-03-09"))
+		writeCSVtoLog(time.Now().Format("15:04:05"))
 		g := readFile(file1)
-		preprocess(g) // TODO: do some performance wrapping for the new pre-processing code
-		file,_ := os.Create(file1 + "-pp.cnf") // Temporary to compare the CNF output
+		startTime := time.Now()
+		var rem int
+		if applyPre {
+			rem = preprocess(g)
+		}
+		fileProcessTime := time.Since(startTime)
+		writeCSVtoLog(string(rem))
+		writeCSVtoLog(fileProcessTime.String())
+		file,_ := os.Create(file1 + "-pregini.cnf") // Temporary to compare the CNF output
 		_ = g.Write(file) // TEMPORARY
 		solveMainRoutine(g)
+		_ = open.Start(logFile)
 	}
 }
 
@@ -85,9 +101,7 @@ func solveMainRoutine(g *gini.Gini) {
 	maxSolveTime := time.Second * 30
 	r := solveFile(g, maxSolveTime)
 	printResult(r)
-	_ = open.Start(logFile)
 }
-
 
 func readFile(filepath string) *gini.Gini {
 	f, err := os.Open(filepath)
@@ -95,52 +109,64 @@ func readFile(filepath string) *gini.Gini {
 		log.Fatal(err)
 	}
 	defer f.Close()
-	r := readFileReader(f)
 	startTime := time.Now()
-
-	g, err := gini.NewDimacs(r)
+	g, err := readFileReader(f)
 	if err != nil {panic(err)}
 	fileReadTime := time.Since(startTime)
-	logToFile("DIMACS parsing time = " + fileReadTime.String())
+	writeCSVtoLog(fileReadTime.String())
 	return g
 }
 
-func readAiger(filepath string) *aiger.T {
-	f, err := os.Open(filepath)
-	if err != nil {
-		log.Fatal(err)
-	}
-	defer f.Close()
-	var r io.Reader
-	r = f
-	startTime := time.Now()
-
-	s, err := aiger.ReadBinary(r)
-	if err != nil {panic(err)}
-	fileReadTime := time.Since(startTime)
-	logToFile("DIMACS parsing time = " + fileReadTime.String())
-	return s
+func readAiger(r io.Reader) (*aiger.T, error) {
+	t, err := aiger.ReadBinary(r)
+	if err != nil {return nil, err}
+	return t, err
 }
 
-func readFileReader(f *os.File) io.Reader {
+func readFileReader(f *os.File) (*gini.Gini, error) {
 	var r io.Reader
 	var e error
+	g := gini.New()
 	switch path.Ext(f.Name()) {
+	case ".AIG":
+	case ".aig":
+	case ".aag":
+	case ".AAG":
+		r = f
+		t, e := readAiger(r)
+		if e != nil {
+			log.Fatal(e.Error())
+		}
+		t.C.ToCnf(g)
+	case ".GZ":
 	case ".gz":
 		r, e = gzip.NewReader(f)
 		if e != nil {
 			log.Fatal(e.Error())
 		}
+		g, e = gini.NewDimacs(r)
+		if e != nil {
+			log.Fatal(e.Error())
+		}
+	case ".BZ2":
 	case ".bz2":
 		r = bzip2.NewReader(f)
+		g, e = gini.NewDimacs(r)
+		if e != nil {
+			log.Fatal(e.Error())
+		}
+	case ".CNF":
 	case ".cnf":
 		r = f
+		g, e = gini.NewDimacs(r)
+		if e != nil {
+			log.Fatal(e.Error())
+		}
 	default:
-		log.Fatal("Invalid File format - must be .gz .bz2 or .cnf")
+		log.Fatal("Invalid File format - must be .aig .aag .gz .bz2 or .cnf")
 	}
-	return r
+	return g, e
 }
-
 
 func solveFile(g *gini.Gini, timeout time.Duration) int {
 	startMem := Tools.TotalMemUsageMB()
@@ -149,11 +175,11 @@ func solveFile(g *gini.Gini, timeout time.Duration) int {
 	startSolve := time.Now()
 	result := doSolve.Try(timeout)
 	endSolve := time.Since(startSolve)
-	logToFile("Solve Time = " + endSolve.String())
+	writeCSVtoLog(endSolve.String())
 	cpuPercentChange := Tools.CpuUsagePercent(0) // returns difference from last cpu check
-	logToFile("CPU Usage % = " + strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
+	writeCSVtoLog(strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
 	memConsumed := Tools.TotalMemUsageMB() - startMem
-	logToFile("Memory Usage Total = " + strconv.FormatUint(memConsumed, 10) + "MB")
+	writeCSVtoLog(strconv.FormatUint(memConsumed, 10) + "MB")
 	return result
 }
 
@@ -169,17 +195,39 @@ func logToFile(s string) {
 	}
 }
 
+func writeCSVtoLog(s string) {
+	f, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil { log.Fatal(err)}
+	if _, err := fmt.Fprint(f, s + ","); err != nil {
+		f.Close()
+		log.Fatal(err)
+	}
+	if err := f.Close(); err != nil {
+		log.Fatal(err)
+	}
+}
+
 func setLogFile(fileIn string) {
 	var filename = fileIn
 	var filenameExt = path.Ext(filename)
-	var newFilenameExt = ".txt"
+	var newFilenameExt = ".csv"
 	newFile := filename[0:len(filename)-len(filenameExt)]
 	logFile = newFile + "-result" + newFilenameExt
+	if _, err := os.Stat(logFile); err == nil {
+		logToFile("") // Newline
+	} else if os.IsNotExist(err) {
+		logToFile("File Name,Date,Time,DIMACS Time,Preprocess Time,Clauses Removed,Solve Time,CPU,MEM,Result,")
+	}
 }
 
 func setLogDir(fileIn string) {
-	newFilenameExt := ".txt"
+	newFilenameExt := ".csv"
 	logFile = path.Dir(fileIn) + "Directory-CNF-Results" + newFilenameExt
+	if _, err := os.Stat(logFile); err == nil {
+		logToFile("") // NewLine
+	} else if os.IsNotExist(err) {
+		logToFile("File Name,Date,Time,DIMACS Time,Preprocess Time,Clauses Removed,Solve Time,CPU,MEM,Result,")
+	}
 }
 
 
@@ -193,11 +241,9 @@ func printResult(result int) {
 	case -1:
 		resultStr = "UNSAT"
 	default:
-		resultStr = "ERR IN SOLVE"
+		resultStr = "ERR"
 	}
-	logToFile("Solve result = " + resultStr)
-	logToFile(" ") // Space before next run if multiple are done
-
+	writeCSVtoLog(resultStr)
 }
 
 func testRand3Cnf(vars int) int {
@@ -208,11 +254,11 @@ func testRand3Cnf(vars int) int {
 	startSolve := time.Now()
 	result := doSolve.Try(300*time.Second)
 	endSolve := time.Since(startSolve)
-	logToFile("Solve Time = " + endSolve.String())
+	writeCSVtoLog("Solve Time = " + endSolve.String())
 	cpuPercentChange := Tools.CpuUsagePercent(0) // returns difference from last cpu check
-	logToFile("CPU Usage % = " + strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
+	writeCSVtoLog("CPU Usage % = " + strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
 	memConsumed := Tools.TotalMemUsageMB() - startMem
-	logToFile("Memory Usage Total = " + strconv.FormatUint(memConsumed, 10) + "MB")
+	writeCSVtoLog("Memory Usage Total = " + strconv.FormatUint(memConsumed, 10) + "MB")
 	return result
 }
 
@@ -254,21 +300,8 @@ func filePreprocess(filepath string) (newfilepath string, err error) {
 	return file.Name(), nil
 }
 
-func solveAiger() {
-	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
-	file1, _ := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig").Load()
-	setLogFile(file1)
-	g := gini.New()
-	aig := readAiger(file1)
-	aig.C.ToCnf(g)
-	r := solveFile(g, 30*time.Second)
-	printResult(r)
-	_ = open.Start(logFile)
-	return
-}
-
-func preprocess(g *gini.Gini) {
-	pregini.Subsumption(g)
+func preprocess(g *gini.Gini) int {
+	clauseRem := pregini.Subsumption(g)
 	//pregini.SelfSubsumption(g) // Performs selfsub on a gini solver
-	return
+	return clauseRem
 }
