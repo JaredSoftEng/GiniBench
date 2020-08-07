@@ -83,6 +83,55 @@ func WatchedSubsumption (g *gini.Gini) []z.C {
 	return remClauses
 }
 
+func WatchedGiniLinear(g *gini.Gini) *gini.Gini {
+	g2 := g.Copy()
+	w := g2.ClauseDB().Vars.Watches
+	for _, wLit := range w {
+		wLit = wLit[:0] // Sets each watch range to nil
+	}
+	g2.ClauseDB().CDat.Forall(func(i int, o z.C, ms []z.Lit) {
+		litSize := len(ms)
+		litEven := litSize%2
+		for j, m := range ms {
+			if litEven == 0 {
+				n := ms[litSize - j]
+				w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
+				if j == litSize/2 {break}
+			} else {
+				if j == litSize {
+					n := ms[0]
+					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
+				} else {
+					n := ms[litSize+1]
+					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
+				}
+			}
+		}
+	})
+	return g2
+}
+
+func WatchedGiniFull(g *gini.Gini) *gini.Gini {
+	g2 := g.Copy()
+	w := g2.ClauseDB().Vars.Watches
+	for _, wLit := range w {
+		wLit = wLit[:0] // Sets each watch range to nil
+	}
+	g2.ClauseDB().CDat.Forall(func(i int, o z.C, ms []z.Lit) {
+		if len(ms) > 1 {
+			for j, m := range ms {
+				for k, n := range ms {
+					if j == k {
+						continue
+					}
+					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, j == 2))
+				}
+			}
+		}
+	})
+	return g2
+}
+
 // Given the gini solver and an integer referring to a literal (2 = 1, 3 = -1 etc.) returns arrays containing the length of watched clauses, a pointer to it and its elements
 func FetchClauses(g *gini.Gini, lit int) (int, []z.C, [][]z.Lit ) {
 	var clausePointer []z.C
