@@ -36,7 +36,7 @@ func main() {
 	applyPre := dialog.Message("%s", "Apply Preprocessing?").Title("Preprocessing").YesNo()
 	if ok {
 		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
-		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz")
+		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz2")
 		gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
 		files = append(files, bzFiles...)
 		files = append(files, gzFiles...)
@@ -58,14 +58,13 @@ func main() {
 			writeCSVtoLog(time.Now().Format("15:04:05"))
 			g := readFile(f)
 			var rem int
-			rem = 0
 			startTime := time.Now()
 			if applyPre {
 				rem = preprocess(g)
 			}
 			fileProcessTime := time.Since(startTime)
 			writeCSVtoLog(fileProcessTime.String())
-			writeCSVtoLog(string(rem))
+			writeCSVtoLog(strconv.FormatInt(int64(rem), 10))
 			solveMainRoutine(g)
 			logToFile("")
 		}
@@ -84,23 +83,22 @@ func main() {
 		writeCSVtoLog(time.Now().Format("15:04:05"))
 		g := readFile(file1)
 		var rem int
-		rem = 0
 		startTime := time.Now()
 		if applyPre {
 			rem = preprocess(g)
 		}
 		fileProcessTime := time.Since(startTime)
 		writeCSVtoLog(fileProcessTime.String())
-		writeCSVtoLog(string(rem))
-		file,_ := os.Create(file1 + "-pregini.cnf") // Temporary to compare the CNF output
-		_ = g.Write(file) // TEMPORARY
+		writeCSVtoLog(strconv.FormatInt(int64(rem), 10))
+		//file,_ := os.Create(file1 + "-pregini2.cnf") // Temporary to compare the CNF output
+		//_ = g.Write(file) // TEMPORARY
 		solveMainRoutine(g)
 		_ = open.Start(logFile)
 	}
 }
 
 func solveMainRoutine(g *gini.Gini) {
-	maxSolveTime := time.Second * 30
+	maxSolveTime := time.Second * 10
 	r := solveFile(g, maxSolveTime)
 	printResult(r)
 }
@@ -226,7 +224,6 @@ func setLogDir(fileIn string) {
 	newFilenameExt := ".csv"
 	logFile = path.Dir(fileIn) + "Directory-CNF-Results" + newFilenameExt
 	if _, err := os.Stat(logFile); err == nil {
-		logToFile("") // NewLine
 	} else if os.IsNotExist(err) {
 		logToFile("File Name,Date,Time,DIMACS Time,Preprocess Time,Clauses Removed,Solve Time,CPU,MEM,Result,")
 	}

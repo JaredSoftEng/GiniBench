@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/jaredsofteng/gini"
 	"github.com/jaredsofteng/gini/z"
+	"sort"
+	"time"
 )
 
 // Takes as input a gini solver, and perform self-subsumption methods on the clause database.
@@ -86,25 +88,15 @@ func WatchedSubsumption (g *gini.Gini) []z.C {
 func WatchedGiniLinear(g *gini.Gini) *gini.Gini {
 	g2 := g.Copy()
 	w := g2.ClauseDB().Vars.Watches
-	for _, wLit := range w {
-		wLit = wLit[:0] // Sets each watch range to nil
-	}
+	watch := g2.ClauseDB().GetWatch()
 	g2.ClauseDB().CDat.Forall(func(i int, o z.C, ms []z.Lit) {
 		litSize := len(ms)
-		litEven := litSize%2
-		for j, m := range ms {
-			if litEven == 0 {
-				n := ms[litSize - j]
-				w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
-				if j == litSize/2 {break}
-			} else {
-				if j == litSize {
-					n := ms[0]
-					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
-				} else {
-					n := ms[litSize+1]
-					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, false))
-				}
+		if litSize == 1 {
+			w[ms[0]] = append(w[ms[0]], watch.NewWatch(o, ms[0], false))
+		}
+		if litSize > 2 {
+			for _, m := range ms[2:] {
+				w[m] = append(w[m], watch.NewWatch(o, m, false))
 			}
 		}
 	})
@@ -114,17 +106,18 @@ func WatchedGiniLinear(g *gini.Gini) *gini.Gini {
 func WatchedGiniFull(g *gini.Gini) *gini.Gini {
 	g2 := g.Copy()
 	w := g2.ClauseDB().Vars.Watches
-	for _, wLit := range w {
-		wLit = wLit[:0] // Sets each watch range to nil
+	for i := 0; i < len(w); i++ {
+		w[i] = w[i][:0] // reduces each to 0
 	}
+	watch := g2.ClauseDB().GetWatch()
 	g2.ClauseDB().CDat.Forall(func(i int, o z.C, ms []z.Lit) {
 		if len(ms) > 1 {
 			for j, m := range ms {
 				for k, n := range ms {
-					if j == k {
+					if j == k  {
 						continue
 					}
-					w[m] = append(w[m], g2.ClauseDB().Vars.Watches[0][0].NewWatch(o, n, j == 2))
+					w[m] = append(w[m], watch.NewWatch(o, n, false))
 				}
 			}
 		}
@@ -146,11 +139,29 @@ func FetchClauses(g *gini.Gini, lit int) (int, []z.C, [][]z.Lit ) {
 	return watchLen, clausePointer, clauseLitArr
 }
 
+
+
 // Wrapper for the Subsumption method, will compact the cDat prior to each call.
 func Subsumption(g *gini.Gini) int {
-	cRem := RemoveClauses(g, WatchedBinarySubsumption(g))
-	cRem2 := RemoveClauses(g, WatchedSubsumption(g))
-	return cRem + cRem2
+	//start := time.Now()
+	//cRemB := len(WatchedBinarySubsumption(g))
+	//end := time.Since(start)
+	//start1 := time.Now()
+	//cList := WatchedSubsumption(g)
+	//cRem2, _ := RemoveClauses(g, cList)
+	//end1 := time.Since(start1)
+	////fmt.Println("Watched Binary: " + end.String())
+	//fmt.Println("Binary Watchlist Time: " + end1.String())
+	//fmt.Println(cRemB)
+	//fmt.Println(cRem )
+	start2 := time.Now()
+	g2 := WatchedGiniLinear(g)
+	cList := WatchedSubsumption(g2)
+	cRem2, _ := RemoveClauses(g, cList)
+	end2 := time.Since(start2)
+	fmt.Println("Linear Watchlist Time: " + end2.String())
+	fmt.Println(cRem2)
+	return cRem2
 }
 
 func deprecatedTestFunc (g *gini.Gini) {
@@ -199,18 +210,23 @@ func deprecatedTestFunc (g *gini.Gini) {
 
 // First traverses clause set to unlink the associated watched literals from each clause, and adds the clause to the removal queue.
 // CompactCDat is called which remaps the byte space associated with the clause set.
-func RemoveClauses(g *gini.Gini, c []z.C) int {
-	g.ClauseDB().Remove(c...)
-	g.ClauseDB().GetGC().CompactCDat(g.ClauseDB())
-	return len(c)
+func RemoveClauses(g *gini.Gini, c []z.C) (int, int) {
+	cLocSlice(c).Sort()
+	c = uniq(c)
+	var nBytesRem int
+	if g.ClauseDB().CDat.CompactReady(len(c), len(c)*4) {
+		g.ClauseDB().Remove(c...)
+	} else {
+		g.ClauseDB().Remove(c...)
+		_, nBytesRem = g.ClauseDB().GetGC().CompactCDat(g.ClauseDB())
+	}
+	return len(c), nBytesRem
 }
 
 // Compares arrays of z.Lit (A -> B), returns true if B contains all the elements in A (for performance, assumes literal ordering )
 func Matches(a []z.Lit, b []z.Lit) bool {
-	index := 0
-	for _, aLit := range a {
-		index = Has(aLit, b[index:])
-		if index == -1 { // aLit not found in array
+	for i := range a {
+		if !Has(a[i], b) { // aLit not found in array
 			return false
 		}
 	}
@@ -218,11 +234,11 @@ func Matches(a []z.Lit, b []z.Lit) bool {
 }
 
 // linear search for a literal in a set of literals giving the index found
-func Has(a z.Lit, l []z.Lit) int {
-	for i, b := range l {
-		if b == a {return i}
+func Has(a z.Lit, l []z.Lit) bool {
+	for i := range l {
+		if l[i] == a {return true}
 	}
-	return -1
+	return false
 }
 
 // Returns the value of the variable index based on a z.Lit
@@ -240,4 +256,43 @@ func Int2Lit(i int) z.Lit {
 	} else {
 		return z.Dimacs2Lit(-(i-1)/2)
 	}
+}
+
+type cLocSlice []z.C
+
+func (p cLocSlice) Len() int {
+	return len(p)
+}
+
+func (p cLocSlice) Swap(i, j int) {
+	p[i], p[j] = p[j], p[i]
+}
+
+func (p cLocSlice) Less(i, j int) bool {
+	return p[i] < p[j]
+}
+
+func (p cLocSlice) Sort() {
+	sort.Sort(p)
+}
+
+func uniq(cs []z.C) []z.C {
+	if len(cs) <= 1 {
+		return cs
+	}
+	i := 0
+	j := 1
+	last := cs[0]
+	var cur z.C
+	N := len(cs)
+	for j < N {
+		cur = cs[j]
+		if cur != last {
+			i++
+			cs[i] = cur
+			last = cur
+		}
+		j++
+	}
+	return cs[:i+1]
 }
