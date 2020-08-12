@@ -62,6 +62,7 @@ func WatchedBinarySubsumption (g *gini.Gini) []z.C {
 func WatchedSubsumption (g *gini.Gini) []z.C {
 	WatchedLits := g.ClauseDB().Vars.Watches
 	var remClauses []z.C
+	clauseHash := CreateClauseHash(g)
 	for iLit := 2; iLit < len(WatchedLits); iLit++ {
 		if len(WatchedLits[iLit]) > 1 { // The literal occurs more than once
 			watchLen, cRef, cLits := FetchClauses(g, iLit)
@@ -70,12 +71,18 @@ func WatchedSubsumption (g *gini.Gini) []z.C {
 				for k := j+1; k < watchLen; k++ {
 					nextClause := cRef[k]
 					if len(cLits[j]) <= len(cLits[k]) {
-						if Matches(cLits[j], cLits[k]) {
-							remClauses = append(remClauses, nextClause)
+						// if nextClause is the bigger clause being subsumed
+						if HashCheck(clauseHash,currClause,nextClause){
+							if Matches(cLits[j], cLits[k]) {
+								remClauses = append(remClauses, nextClause)
+							}
 						}
 					} else {
-						if Matches(cLits[k], cLits[j]) {
-							remClauses = append(remClauses, currClause)
+						// if currClause is the bigger clause being subsumed
+						if HashCheck(clauseHash,nextClause,currClause) {
+							if Matches(cLits[k], cLits[j]) {
+								remClauses = append(remClauses, currClause)
+							}
 						}
 					}
 				}
@@ -295,4 +302,41 @@ func uniq(cs []z.C) []z.C {
 		j++
 	}
 	return cs[:i+1]
+}
+
+func CreateClauseHash(g *gini.Gini) map[z.C]uint64 {
+	clauseHash:= make(map[z.C]uint64)
+	d := g.ClauseDB().CDat
+	var ret error
+	val := uint64(0)
+	d.Forall(func(i int, o z.C, ms []z.Lit) {
+
+		if ret != nil {return}
+		for _, m := range ms {
+			val_temp := Hash(m.Dimacs())
+			// perform bitwise OR on the values
+			val = val_temp | val
+		}
+		// add the finished clause signature
+		clauseHash[o] = val
+	})
+	return clauseHash
+
+}
+
+func Hash(i int) uint64 {
+	i = i % 63
+	// return "1" shifted left the number of times equal to the hash integer and casted as a 64 bit integer
+	return uint64(1<<i)
+}
+
+func HashCheck(clauseHash map[z.C]uint64, i z.C, j z.C) bool{
+	c1 := clauseHash[i]
+	c2 := clauseHash[j]
+	// takes the bitwise AND between c1 and complement (^c2) of c2
+	if c1 & (^c2) != uint64(0){
+		return false
+	} else{
+		return true
+	}
 }
