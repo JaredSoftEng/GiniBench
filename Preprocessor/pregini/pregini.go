@@ -5,6 +5,7 @@ import (
 	"github.com/jaredsofteng/gini"
 	"github.com/jaredsofteng/gini/z"
 	"sort"
+	"strconv"
 	"time"
 )
 
@@ -85,6 +86,40 @@ func WatchedSubsumption (g *gini.Gini) []z.C {
 	return remClauses
 }
 
+// A more thorough Subsumption mechanism using watched literals. For any watched literal, will compare the clauses to test for subsumption.
+// BUT: This is a 2-literal watched schema, ie (3 4 0) would not subsume (1 2 3 4 0) as no watch is established for literals after the first two.
+func EfficientSubsumption (g *gini.Gini) []z.C {
+	cdb := g.ClauseDB()
+	WatchedLits := cdb.Vars.Watches
+	D := cdb.CDat.D
+	var remClauses []z.C
+	for iLit := 2; iLit < len(WatchedLits); iLit++ {
+		watchLen := len(WatchedLits[iLit])
+		if watchLen > 1 { // The literal occurs more than once
+			for j := 0; j < watchLen-1; j++ {
+				currClause := WatchedLits[iLit][j].C()
+				currSize := cdb.Size(currClause)
+				currLoc := cLoc2Int(currClause) + 1
+				for k := j+1; k < watchLen; k++ {
+					nextClause := WatchedLits[iLit][k].C()
+					nextSize := cdb.Size(nextClause)
+					nextLoc := cLoc2Int(nextClause) + 1
+					if currSize <= nextSize {
+						if Matches(D[currLoc:currLoc+currSize], D[nextLoc:nextLoc+nextSize]) {
+							remClauses = append(remClauses, nextClause)
+						}
+					} else {
+						if Matches(D[nextLoc:nextLoc+nextSize], D[currLoc:currLoc+currSize]) {
+							remClauses = append(remClauses, currClause)
+						}
+					}
+				}
+			}
+		}
+	}
+	return remClauses
+}
+
 func WatchedGiniLinear(g *gini.Gini) *gini.Gini {
 	g2 := g.Copy()
 	w := g2.ClauseDB().Vars.Watches
@@ -137,6 +172,22 @@ func FetchClauses(g *gini.Gini, lit int) (int, []z.C, [][]z.Lit ) {
 		clauseLits = nil
 	}
 	return watchLen, clausePointer, clauseLitArr
+}
+
+// Given the gini solver returns a mapping for all clause references and a pointer to it
+func FetchClauseMap(g *gini.Gini) ([]z.C, map[z.C]map[z.Lit]z.Lit ) {
+	var clausePointer []z.C
+	clauseMapArr := make(map[z.C]map[z.Lit]z.Lit)
+	d := g.ClauseDB().CDat
+	d.Forall(func(i int, p z.C, ms []z.Lit) {
+		MapArr := make(map[z.Lit]z.Lit)
+		for j := range ms {
+			MapArr[ms[j]] = ms[j]
+		}
+		clauseMapArr[p] = MapArr
+		clausePointer = append(clausePointer, p)
+	})
+	return clausePointer, clauseMapArr
 }
 
 
@@ -256,6 +307,13 @@ func Int2Lit(i int) z.Lit {
 	} else {
 		return z.Dimacs2Lit(-(i-1)/2)
 	}
+}
+
+func cLoc2Int(p z.C) int {
+	val := p.String()
+	val = val[1:] // remove the prepended 'c'
+	value, _ := strconv.ParseInt(val, 10, 0)
+	return int(value)
 }
 
 type cLocSlice []z.C
