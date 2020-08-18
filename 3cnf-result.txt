@@ -1,0 +1,10 @@
+Solve Time = 0s
+CPU Usage % = 25.000000
+Memory Usage Total = 0MB
+Solve result = SAT
+ 
+Solve Time = 23.7242702s
+CPU Usage % = 38.248848
+Memory Usage Total = 84MB
+Solve result = SAT
+ 

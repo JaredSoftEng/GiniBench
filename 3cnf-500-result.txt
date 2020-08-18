@@ -1,0 +1,24 @@
+3CNF NVARS = 500, NCLAUSE = 2000
+Solve Time = 18.5673804s
+CPU Usage % = 36.501262
+Memory Usage Total = 72MB
+Solve result = SAT
+
+ 3CNF NVARS = 600, NCLAUSE = 2400
+Solve Time = 5m0.1141791s
+CPU Usage % = 38.135152
+Memory Usage Total = 357MB
+Solve result = UNKNOWN
+
+3CNF NVARS = 550, NCLAUSE = 2200
+Solve Time = 5m0.2069821s
+CPU Usage % = 37.454460
+Memory Usage Total = 359MB
+Solve result = UNKNOWN
+
+3CNF NVARS = 500, NCLAUSE = 2000
+Solve Time = 20.7283313s
+CPU Usage % = 46.929164
+Memory Usage Total = 72MB
+Solve result = SAT
+ 
