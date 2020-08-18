@@ -13,7 +13,7 @@ import (
 )
 
 var showUI = flag.Bool("ui", false, "if in a GUI based OS, shows file-picker dialog and opens a CSV of results (must be the only option in the command)")
-var timeout = flag.Duration("timout", time.Second*30, "solver timeout")
+var timeout = flag.Duration("timeout", time.Second*30, "solver timeout")
 var model = flag.Bool("model", false, "if true, prints out the model (default false)")
 var nosub = flag.Bool("nosub", false, "skips subsumption (default false)")
 var noself = flag.Bool("noself", false, "skips self-subsumption (default false)")

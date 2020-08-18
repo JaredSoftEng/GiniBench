@@ -1,0 +1,2 @@
+File Name,Date,Time,DIMACS Time,Variables,Clauses,Literals,Selfsub Time,Clauses Affected,Lits Removed,Subsumption Time,Clauses Removed,Lits Removed,Solve Time,CPU,MEM,Result
+C:\Users\Jared\go\src\GiniBench\Benchmark Problems\GiniPre Benchmark Suite\frb35-17-5-mgd_ext.cnf.bz2,2020-08-18,11:09:36,27568,175,12334,107087,29000,11532,24970,66971,71,142,
