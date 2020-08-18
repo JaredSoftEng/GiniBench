@@ -25,7 +25,7 @@ import (
 
 var logFile string
 
-func main() {
+func OpenUI() {
 	startFolder := path.Join(os.Getenv("USERPROFILE"), "Downloads")
 	file1, err := dialog.File().SetStartDir(startFolder).Filter("DIMACS File", "bz2", "cnf", "gz", "aag","aig","dimacs").Load()
 	if err != nil {
@@ -33,74 +33,60 @@ func main() {
 		return
 	}
 	ok := dialog.Message("%s", "Import entire Directory?").Title("Import Scope").YesNo()
-	applyPre := dialog.Message("%s", "Apply Preprocessing?").Title("Preprocessing").YesNo()
 	if ok {
-		files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
-		bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz2")
-		gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
-		files = append(files, bzFiles...)
-		files = append(files, gzFiles...)
-		if err != nil {
-			log.Fatal(err)
-		}
+		files := getCNFFiles(file1)
 		setLogDir(file1)
 		for _, f := range files {
-			if applyPre {
-				//defer profile.Start().Stop()
-				//err := err
-				//f, err = filePreprocess(f)
-				//if err != nil {
-				//	log.Fatal(err.Error())
-				//}
-			}
 			writeCSVtoLog(path.Base(f))
-			writeCSVtoLog(time.Now().Format("2006-03-09"))
+			writeCSVtoLog(time.Now().Format("2006-01-02"))
 			writeCSVtoLog(time.Now().Format("15:04:05"))
 			g := readFile(f)
-			var rem int
-			startTime := time.Now()
-			if applyPre {
-				rem = preprocess(g)
+			writeCSVtoLog(strconv.Itoa(len(g.ClauseDB().Vars.Vals)/2 - 1))
+			writeCSVtoLog(strconv.Itoa(g.ClauseDB().CDat.ClsLen))
+			writeCSVtoLog(strconv.Itoa(g.ClauseDB().CDat.Len-2*g.ClauseDB().CDat.ClsLen))
+			if !(*noself) {
+				preprocessSelf(g)
 			}
-			fileProcessTime := time.Since(startTime)
-			writeCSVtoLog(fileProcessTime.String())
-			writeCSVtoLog(strconv.FormatInt(int64(rem), 10))
-			solveMainRoutine(g)
-			logToFile("")
+			if !(*nosub) {
+				preprocessSub(g)
+			}
+			if *cnf {
+				file, _ := os.Create(f + "-ginipre.cnf") // Temporary to compare the CNF output
+				_ = g.Write(file)                            // TEMPORARY
+			} else {
+				solveMainRoutine(g, *timeout)
+				logToFile("")
+			}
 		}
 		_ = open.Start(logFile)
 	} else {
 		setLogFile(file1)
-		if applyPre {
-			//defer profile.Start().Stop()
-			//startTime := time.Now()
-			//err := err
-			//file1, err = filePreprocess(file1)
-			//fileProcessTime := time.Since(startTime)
-		}
 		writeCSVtoLog(path.Base(file1))
-		writeCSVtoLog(time.Now().Format("2006-03-09"))
+		writeCSVtoLog(time.Now().Format("2006-01-02"))
 		writeCSVtoLog(time.Now().Format("15:04:05"))
 		g := readFile(file1)
-		var rem int
-		startTime := time.Now()
-		if applyPre {
-			rem = preprocess(g)
+		writeCSVtoLog(strconv.Itoa(len(g.ClauseDB().Vars.Vals)/2 - 1))
+		writeCSVtoLog(strconv.Itoa(g.ClauseDB().CDat.ClsLen))
+		writeCSVtoLog(strconv.Itoa(g.ClauseDB().CDat.Len - 2*g.ClauseDB().CDat.ClsLen))
+		if !(*noself) {
+			preprocessSelf(g)
 		}
-		fileProcessTime := time.Since(startTime)
-		writeCSVtoLog(fileProcessTime.String())
-		writeCSVtoLog(strconv.FormatInt(int64(rem), 10))
-		//file,_ := os.Create(file1 + "-pregini2.cnf") // Temporary to compare the CNF output
-		//_ = g.Write(file) // TEMPORARY
-		solveMainRoutine(g)
-		_ = open.Start(logFile)
+		if !(*nosub) {
+			preprocessSub(g)
+		}
+		if *cnf {
+			file, _ := os.Create(file1 + "-ginipre.cnf") // Temporary to compare the CNF output
+			_ = g.Write(file)                            // TEMPORARY
+		} else {
+			solveMainRoutine(g, *timeout)
+			_ = open.Start(logFile)
+		}
 	}
 }
 
-func solveMainRoutine(g *gini.Gini) {
-	maxSolveTime := time.Second * 10
-	r := solveFile(g, maxSolveTime)
-	printResult(r)
+func solveMainRoutine(g *gini.Gini, t time.Duration) {
+	r := solveFile(g, t)
+	writeCSVtoLog(printResult(r))
 }
 
 func readFile(filepath string) *gini.Gini {
@@ -113,7 +99,11 @@ func readFile(filepath string) *gini.Gini {
 	g, err := readFileReader(f)
 	if err != nil {panic(err)}
 	fileReadTime := time.Since(startTime)
-	writeCSVtoLog(fileReadTime.String())
+	if *showUI {
+		writeCSVtoLog(strconv.FormatInt(fileReadTime.Microseconds(), 10))
+	} else {
+		fmt.Println("c File Read Time = " + fileReadTime.String())
+	}
 	return g
 }
 
@@ -129,8 +119,11 @@ func readFileReader(f *os.File) (*gini.Gini, error) {
 	g := gini.New()
 	switch path.Ext(f.Name()) {
 	case ".AIG":
+		fallthrough
 	case ".aig":
+		fallthrough
 	case ".aag":
+		fallthrough
 	case ".AAG":
 		r = f
 		t, e := readAiger(r)
@@ -139,6 +132,7 @@ func readFileReader(f *os.File) (*gini.Gini, error) {
 		}
 		t.C.ToCnf(g)
 	case ".GZ":
+		fallthrough
 	case ".gz":
 		r, e = gzip.NewReader(f)
 		if e != nil {
@@ -149,6 +143,7 @@ func readFileReader(f *os.File) (*gini.Gini, error) {
 			log.Fatal(e.Error())
 		}
 	case ".BZ2":
+		fallthrough
 	case ".bz2":
 		r = bzip2.NewReader(f)
 		g, e = gini.NewDimacs(r)
@@ -156,6 +151,7 @@ func readFileReader(f *os.File) (*gini.Gini, error) {
 			log.Fatal(e.Error())
 		}
 	case ".CNF":
+		fallthrough
 	case ".cnf":
 		r = f
 		g, e = gini.NewDimacs(r)
@@ -168,6 +164,24 @@ func readFileReader(f *os.File) (*gini.Gini, error) {
 	return g, e
 }
 
+func getCNFFiles(file1 string) []string {
+	files, err := Tools.WalkMatch(path.Dir(file1), "*.cnf")
+	bzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.bz2")
+	gzFiles, err := Tools.WalkMatch(path.Dir(file1), "*.gz")
+	aigFiles, err := Tools.WalkMatch(path.Dir(file1), "*.aig")
+	aagFiles, err := Tools.WalkMatch(path.Dir(file1), "*.aag")
+
+	files = append(files, bzFiles...)
+	files = append(files, gzFiles...)
+	files = append(files, aigFiles...)
+	files = append(files, aagFiles...)
+	if err != nil {
+		log.Fatal(err)
+	}
+	setLogDir(file1)
+	return files
+}
+
 func solveFile(g *gini.Gini, timeout time.Duration) int {
 	startMem := Tools.TotalMemUsageMB()
 	doSolve := g.GoSolve()
@@ -175,7 +189,7 @@ func solveFile(g *gini.Gini, timeout time.Duration) int {
 	startSolve := time.Now()
 	result := doSolve.Try(timeout)
 	endSolve := time.Since(startSolve)
-	writeCSVtoLog(endSolve.String())
+	writeCSVtoLog(strconv.FormatInt(endSolve.Microseconds(),10))
 	cpuPercentChange := Tools.CpuUsagePercent(0) // returns difference from last cpu check
 	writeCSVtoLog(strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
 	memConsumed := Tools.TotalMemUsageMB() - startMem
@@ -207,30 +221,7 @@ func writeCSVtoLog(s string) {
 	}
 }
 
-func setLogFile(fileIn string) {
-	var filename = fileIn
-	var filenameExt = path.Ext(filename)
-	var newFilenameExt = ".csv"
-	newFile := filename[0:len(filename)-len(filenameExt)]
-	logFile = newFile + "-result" + newFilenameExt
-	if _, err := os.Stat(logFile); err == nil {
-		logToFile("") // Newline
-	} else if os.IsNotExist(err) {
-		logToFile("File Name,Date,Time,DIMACS Time,Preprocess Time,Clauses Removed,Solve Time,CPU,MEM,Result,")
-	}
-}
-
-func setLogDir(fileIn string) {
-	newFilenameExt := ".csv"
-	logFile = path.Dir(fileIn) + "Directory-CNF-Results" + newFilenameExt
-	if _, err := os.Stat(logFile); err == nil {
-	} else if os.IsNotExist(err) {
-		logToFile("File Name,Date,Time,DIMACS Time,Preprocess Time,Clauses Removed,Solve Time,CPU,MEM,Result,")
-	}
-}
-
-
-func printResult(result int) {
+func printResult(result int) string {
 	var resultStr string
 	switch result {
 	case 0:
@@ -242,7 +233,7 @@ func printResult(result int) {
 	default:
 		resultStr = "ERR"
 	}
-	writeCSVtoLog(resultStr)
+	return resultStr
 }
 
 func testRand3Cnf(vars int) int {
@@ -253,7 +244,7 @@ func testRand3Cnf(vars int) int {
 	startSolve := time.Now()
 	result := doSolve.Try(300*time.Second)
 	endSolve := time.Since(startSolve)
-	writeCSVtoLog("Solve Time = " + endSolve.String())
+	writeCSVtoLog("Solve Time = " + strconv.FormatInt(endSolve.Microseconds(),10))
 	cpuPercentChange := Tools.CpuUsagePercent(0) // returns difference from last cpu check
 	writeCSVtoLog("CPU Usage % = " + strconv.FormatFloat(cpuPercentChange, 'f', 6, 64))
 	memConsumed := Tools.TotalMemUsageMB() - startMem
@@ -299,8 +290,83 @@ func filePreprocess(filepath string) (newfilepath string, err error) {
 	return file.Name(), nil
 }
 
-func preprocess(g *gini.Gini) int {
-	clauseRem := pregini.Subsumption(g)
-	//pregini.SelfSubsumption(g) // Performs selfsub on a gini solver
-	return clauseRem
+func preprocessSub(g *gini.Gini) {
+	startTime := time.Now()
+	var clauseRem int
+	var litRem int
+	if *fullsub{
+		clauseRem, litRem = pregini.FullSubsumption(g)
+	} else {
+		clauseRem, litRem = pregini.Subsumption(g)
+	}
+	if litRem > 0 {
+		litRem = litRem - clauseRem*2
+	}
+	subTime := time.Since(startTime)
+	if *showUI {
+		writeCSVtoLog(strconv.FormatInt(subTime.Microseconds(), 10))
+		writeCSVtoLog(strconv.FormatInt(int64(clauseRem), 10))
+		writeCSVtoLog(strconv.FormatInt(int64(litRem), 10))
+	} else {
+		fmt.Println("c Subsumption Time = " + subTime.String() + " to remove " + strconv.FormatInt(int64(clauseRem), 10) + " clauses.")
+	}
+}
+
+func preprocessSelf(g *gini.Gini) {
+	startTime := time.Now()
+	clauseRem, LitRem := pregini.SelfSubsumption(g)
+	subTime := time.Since(startTime)
+	if *showUI {
+		writeCSVtoLog(strconv.FormatInt(subTime.Microseconds(), 10))
+		writeCSVtoLog(strconv.FormatInt(int64(clauseRem), 10))
+		writeCSVtoLog(strconv.FormatInt(int64(LitRem), 10))
+	} else {
+		fmt.Println("c SelfSubsumption Time = " + subTime.String() + " to remove " + strconv.FormatInt(int64(clauseRem), 10) + " clauses.")
+	}
+}
+
+func setLogDir(fileIn string) {
+	newFilenameExt := ".csv"
+	pathLen := len(path.Dir(fileIn))
+	t := time.Now()
+	datetime := t.Format("20060102-150405")
+	logFile = path.Dir(fileIn)[:pathLen-1] + "Directory-CNF-Results-" + datetime + newFilenameExt
+	if _, err := os.Stat(logFile); err == nil {
+	} else if os.IsNotExist(err) {
+		var header string
+		header = "File Name,Date,Time,DIMACS Time,Variables,Clauses,Literals,"
+		if !(*noself) {
+			header = header + "Selfsub Time,Clauses Affected,Lits Removed,"
+		}
+		if !(*nosub) {
+			header = header + "Subsumption Time,Clauses Removed,Lits Removed,"
+		}
+		header = header + "Solve Time,CPU,MEM,Result"
+		logToFile(header)
+	}
+}
+
+func setLogFile(fileIn string) {
+	var filename = fileIn
+	var filenameExt = path.Ext(filename)
+	var newFilenameExt = ".csv"
+	newFile := filename[0:len(filename)-len(filenameExt)]
+	var datetime string
+	t := time.Now()
+	datetime = t.Format("20060102-150405")
+	logFile = newFile + "-result-" + datetime + newFilenameExt
+	if _, err := os.Stat(logFile); err == nil {
+		logToFile("") // Newline
+	} else if os.IsNotExist(err) {
+		var header string
+		header = "File Name,Date,Time,DIMACS Time,Variables,Clauses,Literals,"
+		if !(*noself) {
+			header = header + "Selfsub Time,Clauses Affected,Lits Removed,"
+		}
+		if !(*nosub) {
+			header = header + "Subsumption Time,Clauses Removed,Lits Removed,"
+		}
+		header = header + "Solve Time,CPU,MEM,Result"
+		logToFile(header)
+	}
 }
